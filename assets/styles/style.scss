@@ -1,3 +1,18 @@
 @import "./vars";
 @import "./templatescommon";
 @import "./header";
+@import "./slider";
+
+@font-face {
+    src: url(../fonts/FuturaNewBold-Reg.woff);
+    font-family: 'Futura New';
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  @font-face {
+    src: url(../fonts/FuturaNewBook-Reg.woff);
+    font-family: 'Futura New';
+    font-style: normal;
+    font-weight: 400;
+  }
