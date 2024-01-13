@@ -28,7 +28,140 @@
       <!-- Блок кнопки запроса картинки котика и факта про котика, отвечает Тасисия-->
       <article></article>
       <!-- Блок форма данных о питомце, отвечает Ира -->
-      <article></article>
+      <article>
+        <h1>Регистрационная форма для владельцев кошек</h1>
+
+        <form name="catForm" novalidate onsubmit="return validateForm()">
+          <label for="login">Логин:</label>
+          <input
+            type="text"
+            placeholder="Введите логин"
+            id="login"
+            name="login"
+            required
+            minlength="2"
+            maxlength="20"
+            pattern="[A-Za-z\s]+"
+          /><br /><br />
+
+          <label for="name">Имя владельца:</label>
+          <input
+            type="text"
+            placeholder="Введите свое имя"
+            id="name"
+            name="name"
+            required
+            minlength="2"
+            maxlength="20"
+            pattern="[A-Za-z\s]+"
+          /><br /><br />
+
+          <label for="email">Введите email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Введите свой email"
+            required
+          /><br /><br />
+
+          <label for="nickname">Имя кошки:</label>
+          <input
+            type="text"
+            id="nickname"
+            name="nickname"
+            placeholder="Введите кличку кошки"
+            required
+          /><br /><br />
+
+          <label for="breed">Порода кошки:</label>
+          <select
+            id="breed"
+            name="breed"
+            placeholder="Выберите породу"
+            required
+          >
+            <option value="doctor">Абиссинская</option>
+            <option value="programmer">Азиатская</option>
+            <option value="teacher">Балийская</option>
+            <option value="designer">Турецкий Ван</option>
+            <option value="engineer">Австралийский Мист</option>
+            <option value="salesman">Тонкинская</option>
+            <option value="other">Сиамская</option>
+            <option value="other">Шотландская вислоухая</option>
+            <option value="other">Саванна</option>
+            <option value="other">Русская голубая</option>
+            <option value="other">Персидская длинношерстная</option>
+            <option value="other">Оцикет</option>
+            <option value="other">Манчкин</option>
+            <option value="other">Шиншилла</option>
+            <option value="other">Корниш-рекс</option>
+            <option value="other">Бурмилла</option>
+            <option value="other">Бирманская</option>
+            <option value="other">Бенгальская</option>
+            <option value="other">Другая</option></select
+          ><br /><br />
+
+          <label for="color">Окрас:</label>
+          <input type="text" id="color" name="color" required /><br /><br />
+
+          <label for="age">Возраст кошки:</label>
+          <input type="text" id="age" name="age" required /><br /><br />
+
+          <label for="gender">Пол:</label>
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Мужской</label>
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+            required
+          />
+          <label for="female">Женский</label><br /><br />
+
+          <label for="skill"> Умения, команды, трюки:</label>
+          <input
+            type="text"
+            placeholder="Что умеет делать питомец"
+            id="skill"
+            name="skill"
+            required
+          /><br /><br />
+
+          <label for="password">Пароль:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Введите пароль"
+            required
+            minlength="8"
+            pattern="^(?=.*[a-z])(?=.*[A-Z] ])(?=.*\d).+$"
+          /><br /><br />
+
+          <label for="repeatPassword">Повторить пароль:</label>
+          <input
+            type="password"
+            id="repeatPassword"
+            name="repeatPassword"
+            placeholder="Повторите свой пароль"
+            required
+            minlength="8"
+            pattern="^(?=.*[a-z])(?=.*[A-Z] ])(?=.*\d).+$"
+          /><br /><br />
+
+          <label for="consent">Я даю согласие на обработку данных:</label>
+          <input
+            type="checkbox"
+            id="approval"
+            name="approval"
+            required
+          /><br /><br />
+
+          <input type="submit" value="Отправить" />
+        </form>
+      </article>
     </main>
 
     <footer></footer>
