@@ -14,9 +14,11 @@
           <img class="header__logo" src="assets/svg/logo.svg" alt="logo" />
           <nav class="header__menu">
             <ul class="nav-list">
-              <li class="nav-list__item">котики</li>
-              <li class="nav-list__item">котокафе</li>
-              <li class="nav-list__item">приюты</li>
+              <li class="nav-list__item">знаменитые коты</li>
+              <li class="nav-list__item">фото и факт</li>
+              <li class="nav-list__item">играть</li>
+              <li class="nav-list__item">карта кота</li>
+              <li class="nav-list__item">рассказать о питомце</li>
             </ul>
           </nav>
         </div>
@@ -26,29 +28,28 @@
       <!-- Блок слайдер, отвечает Оля -->
       <article>
         <div class="slider">
-          <div class="slider__points">
-            <img src="assets/svg/process.svg" alt="process" />
-            <p class="slider__text_paragraph">1</p>
-            <p class="slider__text_paragraph">2</p>
-            <p class="slider__text_paragraph">3</p>
-            <p class="slider__text_paragraph">4</p>
-            <p class="slider__text_paragraph">5</p>
-            <p class="slider__text_paragraph">6</p>
+          <div class="slider-points">
+            <img class="slider-points__arc" src="assets/svg/process.svg" alt="process" />
+            <p class="slider__text_paragraph slider-points__item1">1</p>
+            <p class="slider__text_paragraph slider-points__item2">2</p>
+            <p class="slider__text_paragraph slider-points__item3">3</p>
+            <p class="slider__text_paragraph slider-points__item4">4</p>
+            <p class="slider__text_paragraph slider-points__item5">5</p>
+            <p class="slider__text_paragraph slider-points__item6">6</p>
             
           </div>
           <div class="slider-container">
             
             <div class="slider__text">
-              <h2 class="slider__text_header">Нала</h2>
+              <h2 class="slider__text_header" id="catHeader">Нала</h2>
               
-                <strong>Место жительства:</strong><p class="slider__text_paragraph">Лос-Анжелес</p> 
+                <strong>Локация:</strong><p class="slider__text_paragraph" id="catLocation">Лос-Анжелес, США</p> 
               </p>
               
-                <strong>Порода:</strong> <p class="slider__text_paragraph">микс сиамской и персидской кошки</p>
+                <strong>Порода:</strong> <p class="slider__text_paragraph" id="catBreed">микс сиамской и персидской кошки</p>
               </p>
-              <p class="slider__text_paragraph">
-                У Налы 4,5 млн подписчиков в Instagram, звание TikToker года и
-                состояние в $100 млн долларов.
+              <p class="slider__text_paragraph" id="catInfo">
+                Вполне возможно, что вы видели эту красивую кошку ранее и это не удивительно, потому что у Налы 4,5 млн подписчиков в Instagram, звание TikToker года и состояние в $100 млн долларов. Эта восхитительная кошка с круглыми голубыми глазами не всегда была окружена любовью - будучи крошечным котенком, она была сдана в приют, где находилась какое-то время. К счастью, она нашла любящюю хозяйку.
               </p>
             </div>
             <img class="slider__img" src="assets/images/nala.jpg" alt="nala" />
@@ -195,5 +196,6 @@
     </main>
 
     <footer></footer>
+    <script src="assets/js/slider.js"></script>
   </body>
 </html>
