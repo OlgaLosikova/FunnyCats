@@ -2,17 +2,18 @@
 @import "./templatescommon";
 @import "./header";
 @import "./slider";
+@import "./game";
 
 @font-face {
-    src: url(../fonts/FuturaNewBold-Reg.woff);
-    font-family: 'Futura New';
-    font-style: normal;
-    font-weight: 700;
-  }
-  
-  @font-face {
-    src: url(../fonts/FuturaNewBook-Reg.woff);
-    font-family: 'Futura New';
-    font-style: normal;
-    font-weight: 400;
-  }
+  src: url(../fonts/FuturaNewBold-Reg.woff);
+  font-family: "Futura New";
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  src: url(../fonts/FuturaNewBook-Reg.woff);
+  font-family: "Futura New";
+  font-style: normal;
+  font-weight: 400;
+}
