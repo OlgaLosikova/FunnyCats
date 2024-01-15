@@ -61,6 +61,7 @@ const changeSlide = (index) => {
     catLocation.innerText = catSlides[index].locaton;
     catInfo.innerText = catSlides[index].info;
     catBreed.innerText = catSlides[index].breed;
+    document.querySelector('.slider-container').classList.add('slider-slow');
 };
 let currentIndex=0;
 const sllderInterval = setInterval(function () {
@@ -69,6 +70,13 @@ const sllderInterval = setInterval(function () {
     if(currentIndex>5)
     {currentIndex=0;}
   changeSlide(currentIndex);
-}, 6000);
+}, 5000);
 
-sliderPoint2.addEventListener("click", changeSlide(1));
+sliderPoint1.addEventListener("click", changeSlide);
+sliderPoint2.addEventListener("click", changeSlide);
+sliderPoint3.addEventListener("click", changeSlide);
+sliderPoint4.addEventListener("click", changeSlide);
+sliderPoint5.addEventListener("click", changeSlide);
+sliderPoint6.addEventListener("click", changeSlide);
+
+

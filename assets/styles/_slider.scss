@@ -4,6 +4,7 @@
   align-items: baseline;
   font-family: $fontmain;
   grid-template-rows: repeat(6, 40px);
+  
   .slider-points{
     display: grid;
     justify-items: center;
@@ -52,6 +53,7 @@
     }
   }
   .slider-container {
+    transition: all 1.2s ease-out;
     display: flex;
     margin-top: 151px;
     justify-content: center;
@@ -61,6 +63,10 @@
     background: $bgcolorwhite;
     // box-shadow: $bgshadow;
     margin-left: 12vw;
+    transition: opacity 2s;
+    .slider-slow{
+      transition: all 1s ease-out;
+    }
 
     // border: 1px solid var(--brown-bg, #ede9e8);
 
@@ -82,6 +88,8 @@
       object-fit: cover;
       min-width:25vw;
       height: 25vw;
+      
+
     }
   }
 }
