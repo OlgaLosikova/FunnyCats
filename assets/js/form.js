@@ -42,7 +42,7 @@ function validateForm() {
   }
 
   let age = document.forms["catForm"]["age"].value;
-  if (isNaN(age)) {
+  if (age == "") {
     alert("Пожалуйста, введите возраст Вашей кошки.");
     return false;
   }
@@ -64,10 +64,14 @@ function validateForm() {
     alert("Пожалуйста, введите пароль повторно.");
     return false;
   }
+  if (password != repeatPassword) {
+    alert("Пароли не совпадают.");
+    return false;
+  }
 
-  let approval = document.forms["catForm"]["approval"].value;
-  if (approval == "") {
-    alert("Пожалуйста, введите окрас Вашей кошки.");
+  let approval = document.forms["catForm"]["approval"].checked;
+  if(!approval) {
+    alert("Пожалуйста, дайте согласие на обработку данных.");
     return false;
   }
 }
