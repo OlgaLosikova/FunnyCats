@@ -129,4 +129,21 @@
   font-weight: 400;
 }
 
+.map__body{
+  max-width: 676px;
+  max-height: 500px;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.map__body .map__item{
+  margin: -2px;
+
+}
+
 /*# sourceMappingURL=style.css.map */
