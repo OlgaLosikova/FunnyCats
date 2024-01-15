@@ -111,9 +111,74 @@
 }
 .slider .slider-container .slider__img {
   border-radius: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   min-width: 25vw;
   height: 25vw;
+}
+
+.game-header {
+  font-family: "Futura New";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 110px;
+  background-color: #ffc59e;
+  text-align: center;
+  padding: 20px;
+}
+
+.game-header__name {
+  font-size: 60px;
+}
+
+.game-text {
+  font-family: "Futura New";
+  font-size: 20px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.gamecontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+  gap: 20px;
+  margin: 10px auto;
+}
+
+.gamecontainer__square {
+  width: 150px;
+  height: 150px;
+}
+
+.gamecontainer__square-cat1 {
+  background-image: url("../images/cat1.jpg");
+  background-size: contain;
+}
+
+.gamecontainer__square-cat2 {
+  background-image: url("../images/cat2.jpg");
+  background-size: contain;
+}
+
+.gamecontainer__square-closed {
+  background-image: url("../images/question2.png");
+  background-size: contain;
+}
+
+.success-message {
+  font-family: "Futura New";
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+}
+
+.success-gif {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
 }
 
 @font-face {
@@ -127,6 +192,4 @@
   font-family: "Futura New";
   font-style: normal;
   font-weight: 400;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
