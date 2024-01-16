@@ -235,6 +235,35 @@
   font-family: "Futura New";
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  max-width: 674px;
+
+}
+
+.map__body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px;
+}
+
+.map__item{
+  margin:-3px;
+}
+
+.tooltip {
+  position:fixed;
+  padding: 15px;
+  border: 2px dashed #b3c9ce;
+  border-radius: 4px;
+  text-align: center;
+  color: #333;
+  background: #fff;
+}
+
 @font-face {
   src: url(../fonts/FuturaNewBold-Reg.woff);
   font-family: "Futura New";
