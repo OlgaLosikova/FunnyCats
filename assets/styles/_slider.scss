@@ -4,65 +4,92 @@
   align-items: baseline;
   font-family: $fontmain;
   grid-template-rows: repeat(6, 40px);
-  .slider-points{
+
+  .slider-points {
     display: grid;
     justify-items: center;
-    .slider-points__arc{
+
+    .slider-points__arc {
       grid-row-start: 1;
       grid-row-end: 2;
       grid-column-start: 1;
       grid-column-end: 2;
       margin-top: 5px;
     }
-    .slider-points__item1{
+    .slider-points__item1 {
       grid-row-start: 1;
       grid-row-end: 2;
       grid-column-start: 1;
       grid-column-end: 2;
+      cursor: pointer;
     }
-    .slider-points__item2{
+    .slider-points__item2 {
       grid-row-start: 2;
       grid-row-end: 3;
       grid-column-start: 1;
       grid-column-end: 2;
+      cursor: pointer;
     }
-    .slider-points__item3{
+    .slider-points__item3 {
       grid-row-start: 3;
       grid-row-end: 4;
       grid-column-start: 1;
       grid-column-end: 2;
+      cursor: pointer;
     }
-    .slider-points__item4{
+    .slider-points__item4 {
       grid-row-start: 4;
       grid-row-end: 5;
       grid-column-start: 1;
       grid-column-end: 2;
+      cursor: pointer;
     }
-    .slider-points__item5{
+    .slider-points__item5 {
       grid-row-start: 5;
       grid-row-end: 6;
       grid-column-start: 1;
       grid-column-end: 2;
+      cursor: pointer;
     }
-    .slider-points__item6{
+    .slider-points__item6 {
       grid-row-start: 6;
       grid-row-end: 7;
       grid-column-start: 1;
       grid-column-end: 2;
+      cursor: pointer;
     }
   }
   .slider-container {
     display: flex;
+    justify-content: flex-start;
     margin-top: 151px;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 60vw;
-    border-radius: 20px;
-    background: $bgcolorwhite;
-    // box-shadow: $bgshadow;
     margin-left: 12vw;
+    // flex-wrap: wrap;
+    overflow: hidden;
+    flex-basis: 70%;
+    .slider-line{
+      display: flex;
+      justify-content: flex-start;
+      .slider-card {
+      display: flex;
+      width: 27%;
+      flex-shrink: 0;
+      justify-content: center;
+      align-items: center;
 
-    // border: 1px solid var(--brown-bg, #ede9e8);
+      border-radius: 20px;
+      background: $bgcolorwhite;
+      // box-shadow: $bgshadow;
+      // margin-left: 12vw;
+      transition: all 2s;
+      // .slider-slow{
+      //   transition: all 1s ease-out;
+      // }
+    }
+    }
+    
+
+
 
     .slider__text {
       margin: 0 26px 0 26px;
@@ -80,7 +107,7 @@
     .slider__img {
       border-radius: 20px;
       object-fit: cover;
-      min-width:25vw;
+      min-width: 25vw;
       height: 25vw;
     }
   }
