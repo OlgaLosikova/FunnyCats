@@ -257,15 +257,20 @@
   margin:-3px;
 }
 
-.tooltip {
-  position:fixed;
-  padding: 15px;
-  border: 2px dashed #b3c9ce;
-  border-radius: 4px;
-  text-align: center;
-  color: #333;
-  background: #fff;
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  position: relative;
+  background-color: rgb(254, 214, 140);
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
 }
+
+
+
 
 @font-face {
   src: url(../fonts/FuturaNewBold-Reg.woff);

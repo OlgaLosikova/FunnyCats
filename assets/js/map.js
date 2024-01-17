@@ -1,20 +1,26 @@
-let tooltipElem;
-const wrapper = document.querySelector('.wrapper');
+const parts = [
+    { id: 1, text: "хвост руководит настроением кота, диктует ему направление движения, эмоции и даже периодически подсказывает мурчащему аппарату, как наиболее выгодным образом раскрутить хозяина на еду."},
+    { id: 2, text: "усы"},
+    { id: 3, text: "попа"},
+    { id: 4, text: "морда"},
+    { id: 5, text: "задние ноги"},
+    { id: 6, text: "передние ноги"},
+  ];
 
-wrapper.onmouseover = function (e) {
-    let target = e.target;
-    let tooltipHtml = target.dataset.tooltip;
-    if (!tooltipHtml) return;
+const body = document.querySelector(".map__body");
 
-    tooltipElem = document.createElement('p');
-    tooltipElem.className = 'tooltip';
-    tooltipElem.innerHTML = tooltipHtml;
-    wrapper.append(tooltipElem);
-}
+// Получаем номер картинки
+body.addEventListener("click", (event) => {
+    if (event.target.classList.contains("map__image")) {
+      const number = event.target.id;
+      console.log(number);
+    }
+})
 
-wrapper.onmouseout = function (e) {
-    if (tooltipElem) {
-        tooltipElem.remove();
-        tooltipElem = null;
+// Рисуем окно
+function showPopup (number) {
+    if (parts[item].id == number) {
+        const parentNode = document.createElement("div");
+        parentNode.classList.add("modal__form");
     }
 }
