@@ -15,19 +15,19 @@
           <img class="header__logo" src="assets/svg/logo.svg" alt="logo" />
           <nav class="header__menu">
             <ul class="nav-list">
-              <li class="nav-list__item">знаменитые коты</li>
-              <li class="nav-list__item">фото и факт</li>
-              <li class="nav-list__item">играть</li>
-              <li class="nav-list__item">карта кота</li>
-              <li class="nav-list__item">рассказать о питомце</li>
-            </ul>
+              <li><a href="#blockSlider" class="nav-list__item">знаменитые коты</a></li>
+              <li><a class="nav-list__item" href="#blockForm">вступить в сообщество</a></li>
+              <li><a class="nav-list__item" href="#blockGame">играть</a></li>
+              <li><a class="nav-list__item" href="#blockRndm">фото и факт</a></li>
+              <li><a class="nav-list__item" href="#blockMap">карта кота</a></li>
+                          </ul>
           </nav>
         </div>
       </div>
     </header>
     <main>
       <!-- Блок слайдер, отвечает Оля -->
-      <article>
+      <article id="blockSlider">
         <div class="slider">
           
           <div class="slider-points">
@@ -137,7 +137,7 @@
       </article>
       
       <!-- Блок форма данных о питомце, отвечает Ира -->
-      <article>
+      <article id="blockForm">
         <h1>Регистрационная форма для владельцев кошек</h1>
 
         <form name="catForm" novalidate onsubmit="return validateForm()">
@@ -285,6 +285,7 @@
         </form>
       </article>
       <!-- Блок игры, отвечает Маша -->
+      <article id="blockGame">
       <h2 class="game-header">Поиграем?<br><span class="game-header__name"> Найди котику пару</span></h2>
       <p class="game-text">
         Подбери каждому пару, чтобы коты не грустили. Чтобы начать, нажми любой
@@ -342,7 +343,9 @@
           class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2" alt="Полосатый кот"
         ></div>
       </div>
+    </article>
 <!-- Блок рандомайзер, отвечает Тася -->
+<article id="blockRndm">
 <div class="rndm">
   <h2 class="rndm__header h2"> Не грусти!</h2>
   <div class="rndm__container container" >
@@ -355,7 +358,9 @@
     <p class="qoute__p" id="qoute__p"> Тут будет цитата</p> 
   </div> 
   </div>
+</article>
 <!-- Блок информационной страницы про кота, отвечает Катя -->
+<article id="blockMap">
 <div class="map__body">
   <div id="01" class="map__item">
     <img class="map__image" src="/assets/images/cat_map_1.jpg" alt="часть_1">
@@ -376,11 +381,13 @@
     <img class="map__image" src="/assets/images/cat_map_6.jpg" alt="часть_6">
   </div>
 </div>
+</article>
     </main>
     <footer></footer>
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/game.js"></script>
     <script src="assets/js/form.js"></script>
     <script src="assets/js/random.js"></script>
+    <script src="assets/js/scroll.js"></script>
   </body>
 </html>
