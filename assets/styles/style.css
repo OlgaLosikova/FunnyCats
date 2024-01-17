@@ -38,8 +38,6 @@
   align-items: baseline;
   font-family: "Futura New";
   grid-template-rows: repeat(6, 40px);
-  align-items: center;
-  margin-top: 151px;
 }
 .slider .slider-points {
   display: grid;
