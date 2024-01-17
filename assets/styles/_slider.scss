@@ -1,13 +1,19 @@
+// *{
+//   border: 1px solid red;
+// }
 .slider {
   display: flex;
   justify-content: center;
   align-items: baseline;
   font-family: $fontmain;
   grid-template-rows: repeat(6, 40px);
+  align-items: center;
+  margin-top: 151px;
 
   .slider-points {
     display: grid;
     justify-items: center;
+    margin-right: 12vw;
 
     .slider-points__arc {
       grid-row-start: 1;
@@ -63,8 +69,8 @@
   .slider-container {
     display: flex;
     justify-content: flex-start;
-    margin-top: 151px;
-    margin-left: 12vw;
+    
+    
     width: 27%;
 
     overflow: hidden;
@@ -75,19 +81,20 @@
       transition: all 1s;
       .slider-card {
         display: flex;
-        width: 27%;
+        width: 28%;
+       
         flex-shrink: 0;
         justify-content: flex-start;
         align-items: center;
 
         border-radius: 20px;
         background: $bgcolorwhite;
-        // box-shadow: $bgshadow;
-        // margin-left: 12vw;
+        
+        
 
         .slider__text {
           margin: 0 26px 0 26px;
-          width: 45%;
+          max-width: 45%;
 
           .slider__text_header {
             @include h2($colortextdark);
@@ -99,8 +106,9 @@
         .slider__img {
           border-radius: 20px;
           object-fit: cover;
-          width: 25%;
-          height: 25%;
+          width: 502px;
+          height: 502px;
+          box-shadow: $bgshadow;
         }
       }
     }
