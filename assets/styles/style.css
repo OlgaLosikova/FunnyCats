@@ -23,11 +23,12 @@
   padding-inline-start: 0;
   list-style-type: none;
   font-size: 20px;
-  color: #c3b9b5;
 }
 .header .header__nav .nav-list .nav-list__item {
   float: left;
   margin-left: 5vw;
+  color: #c3b9b5;
+  text-decoration: none;
 }
 .header .header__nav .nav-list .nav-list__item:hover {
   text-decoration: underline;

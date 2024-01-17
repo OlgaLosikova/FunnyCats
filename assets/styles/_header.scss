@@ -22,10 +22,12 @@
       padding-inline-start: 0;
       list-style-type: none;
       font-size: 20px;
-      color: $colortextgray;
+      
       .nav-list__item {
         float: left;
         margin-left: 5vw;
+        color: $colortextgray;
+        text-decoration: none;
       }
       .nav-list__item:hover {
         text-decoration: underline;
