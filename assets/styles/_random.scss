@@ -1,0 +1,30 @@
+.rndm__qoute {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.qoute__img {
+    width: 300px;
+    height: 300px;
+}
+
+.qoute__p {
+    font-family: $fontmain;
+    font-size: 30px;
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly   ;
+}
+.container__p {
+    font-family: $fontmain; 
+}
+.h2 {
+   text-align: center;
+   font-size: 60px;
+    background-color: $bgcolororange;
+    font-family: $fontmain;
+}

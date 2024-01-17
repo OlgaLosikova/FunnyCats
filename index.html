@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/styles/normalize.css" />
     <link rel="stylesheet" href="assets/styles/style.css" />
-    <link rel="stylesheet" href="assets/styles/_game.css">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" />
     <title>FunnyCats</title>
   </head>
   <body>
@@ -15,22 +15,23 @@
           <img class="header__logo" src="assets/svg/logo.svg" alt="logo" />
           <nav class="header__menu">
             <ul class="nav-list">
-              <li class="nav-list__item">знаменитые коты</li>
-              <li class="nav-list__item">фото и факт</li>
-              <li class="nav-list__item">играть</li>
-              <li class="nav-list__item">карта кота</li>
-              <li class="nav-list__item">рассказать о питомце</li>
-            </ul>
+              <li><a href="#blockSlider" class="nav-list__item">знаменитые коты</a></li>
+              <li><a class="nav-list__item" href="#blockForm">вступить в сообщество</a></li>
+              <li><a class="nav-list__item" href="#blockGame">играть</a></li>
+              <li><a class="nav-list__item" href="#blockRndm">фото и факт</a></li>
+              <li><a class="nav-list__item" href="#blockMap">карта кота</a></li>
+                          </ul>
           </nav>
         </div>
       </div>
     </header>
     <main>
       <!-- Блок слайдер, отвечает Оля -->
-      <article>
+      <article id="blockSlider">
         <div class="slider">
+          
           <div class="slider-points">
-            <img class="slider-points__arc" src="assets/svg/process.svg" alt="process" />
+            <img class="slider-points__arc slider-points__arc_mixing2" src="assets/svg/process.svg" alt="process" />
             <p class="slider__text_paragraph slider-points__item1">1</p>
             <p class="slider__text_paragraph slider-points__item2">2</p>
             <p class="slider__text_paragraph slider-points__item3">3</p>
@@ -40,27 +41,103 @@
             
           </div>
           <div class="slider-container">
-            
+            <div class="slider-line"><div class="slider-card">
+              <div class="slider__text">
+                <h2 class="slider__text_header" id="catHeader">Нала</h2>
+                
+                  <strong>Локация:</strong><p class="slider__text_paragraph" id="catLocation">Лос-Анжелес, США</p> 
+                </p>
+                
+                  <strong>Порода:</strong> <p class="slider__text_paragraph" id="catBreed">микс сиамской и персидской кошки</p>
+                </p>
+                <p class="slider__text_paragraph" id="catInfo">
+                  Вполне возможно, что вы видели эту красивую кошку ранее и это не удивительно, потому что у Налы 4,5 млн подписчиков в Instagram, звание TikToker года и состояние в $100 млн долларов. Эта восхитительная кошка с круглыми голубыми глазами не всегда была окружена любовью - будучи крошечным котенком, она была сдана в приют, где находилась какое-то время. К счастью, она нашла любящюю хозяйку.
+                </p>
+              </div>
+              <img class="slider__img" src="assets/images/nala.jpg" alt="nala" />
+            </div>
+            <div class="slider-card">
+              <div class="slider__text">
+                <h2 class="slider__text_header" id="catHeader">Полковник Мяу</h2>
+                
+                  <strong>Локация:</strong><p class="slider__text_paragraph" id="catLocation">Лос-Анжелес, США</p> 
+                </p>
+                
+                  <strong>Порода:</strong> <p class="slider__text_paragraph" id="catBreed">гималайско-персидская</p>
+                </p>
+                <p class="slider__text_paragraph" id="catInfo">
+                  Занял первое место в мире по пушистости по версии книги рекордов Гиннеса. До 2 лет находился в приюте, откуда его забрали хозяева. Такую необычную кличку кот получил в связи с хмуро-зловещим выражением его мордочки и огромным количеством шерсти.
+                </p>
+              </div>
+              <img class="slider__img" src="assets/images/colonelmeow.jpg" alt="colonelmeow" />
+            </div>
+            <div class="slider-card">
+              <div class="slider__text">
+                <h2 class="slider__text_header" id="catHeader">Гарфи</h2>
+                
+                  <strong>Локация:</strong><p class="slider__text_paragraph" id="catLocation">Турция</p> 
+                </p>
+                
+                  <strong>Порода:</strong> <p class="slider__text_paragraph" id="catBreed">персидская</p>
+                </p>
+                <p class="slider__text_paragraph" id="catInfo">
+                  Несмотря на свой грозный вид, Гарфи - один из самых добрых котов в мире. Гарфи, как и все обычные коты, тоже любит залезать в коробки и ящики, бегать за мышкой и посидеть под мокрым зонтиком. Он прекрасная фотомодель и его сходство с настоящим Гарфилдом просто поразительно. А его хозяйка-фотограф сделал его настоящей звездой интернета.
+                </p>
+              </div>
+              <img class="slider__img" src="assets/images/garfy.jpg" alt="colonelmeow" />
+            </div>
+            <div class="slider-card">
+              <div class="slider__text">
+                <h2 class="slider__text_header" id="catHeader">Сердитая кошка</h2>
+                
+                  <strong>Локация:</strong><p class="slider__text_paragraph" id="catLocation">Морристаун, США</p> 
+                </p>
+                
+                  <strong>Порода:</strong> <p class="slider__text_paragraph" id="catBreed">сноу-шу</p>
+                </p>
+                <p class="slider__text_paragraph" id="catInfo">
+                  Кошка, ставшая интернет-знаменитостью благодаря необычной внешности после того, как брат её хозяйки в сентябре 2012 года разместил фотографию кошки на сайте Reddit. По словам хозяйки, Табаты Бундесен, подобная внешность связана с врождённой карликовостью и неправильным прикусом.
+                </p>
+              </div>
+              <img class="slider__img" src="assets/images/grumpycat.jpg" alt="grumpycat" />
+            </div>
+            <div class="slider-card">
             <div class="slider__text">
-              <h2 class="slider__text_header" id="catHeader">Нала</h2>
+              <h2 class="slider__text_header" id="catHeader">Широ Неко</h2>
               
-                <strong>Локация:</strong><p class="slider__text_paragraph" id="catLocation">Лос-Анжелес, США</p> 
+                <strong>Локация:</strong><p class="slider__text_paragraph" id="catLocation">Япония</p> 
               </p>
               
-                <strong>Порода:</strong> <p class="slider__text_paragraph" id="catBreed">микс сиамской и персидской кошки</p>
+                <strong>Порода:</strong> <p class="slider__text_paragraph" id="catBreed">турецкая ван</p>
               </p>
               <p class="slider__text_paragraph" id="catInfo">
-                Вполне возможно, что вы видели эту красивую кошку ранее и это не удивительно, потому что у Налы 4,5 млн подписчиков в Instagram, звание TikToker года и состояние в $100 млн долларов. Эта восхитительная кошка с круглыми голубыми глазами не всегда была окружена любовью - будучи крошечным котенком, она была сдана в приют, где находилась какое-то время. К счастью, она нашла любящюю хозяйку.
+                Широ Неко - кот, постигший дзен. Считается самым ленивым и безмятежным котом в мире. Понаблюдайте за умиротворенным выражением его славной мордашки, обратите внимание на его сонный вид, посмотрите на те вещи, которые он безропотно позволяет с собой вытворять, а потом делайте выводы.
               </p>
             </div>
-            <img class="slider__img" src="assets/images/nala.jpg" alt="nala" />
+            <img class="slider__img" src="assets/images/shironeko.jpg" alt="shironeko" />
+          </div>
+          <div class="slider-card">
+            <div class="slider__text">
+              <h2 class="slider__text_header" id="catHeader">Снупи</h2>
+              
+                <strong>Локация:</strong><p class="slider__text_paragraph" id="catLocation">Чэнду, Китай</p> 
+              </p>
+              
+                <strong>Порода:</strong> <p class="slider__text_paragraph" id="catBreed">экзотическая короткошерстная</p>
+              </p>
+              <p class="slider__text_paragraph" id="catInfo">
+                У Снупи милая мордашка, огромные глаза и плюшевая шерстка - все это не может оставить равнодушными тех, кто его видит. Глядя на него, кажется, что Снупи это красивая мягкая игрушка. Неудивительно, что этот кот стал настоящей звездой интернета. У Снуппи несколько миллионов поклонников со всего мира, свой канал на youtube и страничка на facebook.
+              </p>
+            </div>
+            <img class="slider__img" src="assets/images/snoopy.jpg" alt="snoopy" />
+          </div></div>
+            
           </div>
         </div>
       </article>
-      <!-- Блок кнопки запроса картинки котика и факта про котика, отвечает Тасисия-->
-      <article></article>
+      
       <!-- Блок форма данных о питомце, отвечает Ира -->
-      <article>
+      <article id="blockForm">
         <h1>Регистрационная форма для владельцев кошек</h1>
 
         <form class="form" name="catForm" novalidate onsubmit="return validateForm()">
@@ -238,6 +315,7 @@
         </form>
       </article>
       <!-- Блок игры, отвечает Маша -->
+      <article id="blockGame">
       <h2 class="game-header">Поиграем?<br><span class="game-header__name"> Найди котику пару</span></h2>
       <p class="game-text">
         Подбери каждому пару, чтобы коты не грустили. Чтобы начать, нажми любой
@@ -295,10 +373,51 @@
           class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2" alt="Полосатый кот"
         ></div>
       </div>
+    </article>
+<!-- Блок рандомайзер, отвечает Тася -->
+<article id="blockRndm">
+<div class="rndm">
+  <h2 class="rndm__header h2"> Не грусти!</h2>
+  <div class="rndm__container container" >
+    <p class="container__p">Если тебе грустно! нажимай скорее на кнопку и веселый котик поднимет тебе настроение! Мяу</p>
+    <button clas  s="container__btn" id="container__btn">
+    <p class="container__p">Мяу!</p></button>   
+  </div>
+  <div class="rndm__qoute qoute">
+    <img class="qoute__img" id="qoute__img" src="assets/images/cat_4_rndm.jpg" alt="Котик">
+    <p class="qoute__p" id="qoute__p"> Тут будет цитата</p> 
+  </div> 
+  </div>
+</article>
+<!-- Блок информационной страницы про кота, отвечает Катя -->
+<article id="blockMap">
+<div class="map__body">
+  <div id="01" class="map__item">
+    <img class="map__image" src="/assets/images/cat_map_1.jpg" alt="часть_1">
+  </div>
+  <div id="02"class="map__item">
+    <img class="map__image" src="/assets/images/cat_map_2.jpg" alt="часть_2">
+  </div>
+  <div id="03"class="map__item">
+    <img class="map__image" src="/assets/images/cat_map_3.jpg" alt="часть_3">
+  </div>
+  <div id="04"class="map__item">
+    <img class="map__image" src="/assets/images/cat_map_4.jpg" alt="часть_4">
+  </div>
+  <div id="05"class="map__item">
+    <img class="map__image" src="/assets/images/cat_map_5.jpg" alt="часть_5">
+  </div>
+  <div id="06"class="map__item">
+    <img class="map__image" src="/assets/images/cat_map_6.jpg" alt="часть_6">
+  </div>
+</div>
+</article>
     </main>
     <footer></footer>
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/game.js"></script>
     <script src="assets/js/form.js"></script>
+    <script src="assets/js/random.js"></script>
+    <script src="assets/js/scroll.js"></script>
   </body>
 </html>
