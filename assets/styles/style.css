@@ -1,4 +1,5 @@
 .header {
+  box-sizing: border-box;
   width: 90vw;
   height: 100px;
   padding: 65px 5vw 0 5vw;
@@ -26,7 +27,7 @@
 }
 .header .header__nav .nav-list .nav-list__item {
   float: left;
-  margin-left: 7vw;
+  margin-left: 5vw;
 }
 .header .header__nav .nav-list .nav-list__item:hover {
   text-decoration: underline;
@@ -38,6 +39,8 @@
   align-items: baseline;
   font-family: "Futura New";
   grid-template-rows: repeat(6, 40px);
+  align-items: center;
+  margin-top: 151px;
 }
 .slider .slider-points {
   display: grid;
@@ -115,11 +118,9 @@
   background: #fff;
 }
 .slider .slider-container .slider-line .slider-card .slider__text {
-.slider .slider-container .slider-line .slider-card .slider__text {
   margin: 0 26px 0 26px;
   max-width: 45%;
 }
-.slider .slider-container .slider-line .slider-card .slider__text .slider__text_header {
 .slider .slider-container .slider-line .slider-card .slider__text .slider__text_header {
   color: #080606;
   font-size: 80px;
@@ -130,7 +131,6 @@
 .slider .slider-container .slider-line .slider-card .slider__text .slider__text_paragraph {
   font-size: 20px;
 }
-.slider .slider-container .slider-line .slider-card .slider__img {
 .slider .slider-container .slider-line .slider-card .slider__img {
   border-radius: 20px;
   object-fit: cover;
@@ -248,4 +248,6 @@
   font-family: "Futura New";
   font-style: normal;
   font-weight: 400;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
