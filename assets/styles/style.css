@@ -117,9 +117,11 @@
   background: #fff;
 }
 .slider .slider-container .slider-line .slider-card .slider__text {
+.slider .slider-container .slider-line .slider-card .slider__text {
   margin: 0 26px 0 26px;
   max-width: 45%;
 }
+.slider .slider-container .slider-line .slider-card .slider__text .slider__text_header {
 .slider .slider-container .slider-line .slider-card .slider__text .slider__text_header {
   color: #080606;
   font-size: 80px;
@@ -130,6 +132,7 @@
 .slider .slider-container .slider-line .slider-card .slider__text .slider__text_paragraph {
   font-size: 20px;
 }
+.slider .slider-container .slider-line .slider-card .slider__img {
 .slider .slider-container .slider-line .slider-card .slider__img {
   border-radius: 20px;
   object-fit: cover;
@@ -202,6 +205,40 @@
   padding: 15px;
 }
 
+.rndm__qoute {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.qoute__img {
+  width: 300px;
+  height: 300px;
+}
+
+.qoute__p {
+  font-family: "Futura New";
+  font-size: 30px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.container__p {
+  font-family: "Futura New";
+}
+
+.h2 {
+  text-align: center;
+  font-size: 60px;
+  background-color: #ffc59e;
+  font-family: "Futura New";
+}
+
 @font-face {
   src: url(../fonts/FuturaNewBold-Reg.woff);
   font-family: "Futura New";
@@ -213,6 +250,4 @@
   font-family: "Futura New";
   font-style: normal;
   font-weight: 400;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
