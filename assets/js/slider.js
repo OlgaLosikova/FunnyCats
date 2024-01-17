@@ -27,7 +27,7 @@ const rollSlider = () => {
 const sllderInterval = setInterval(function () {
   sliderCount++;
   changeSlide();
-}, 4000);
+}, 6000);
 
 sliderPoint1.addEventListener("click", () => {
   sliderCount = 0;
