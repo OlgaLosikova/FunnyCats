@@ -139,9 +139,12 @@
       <article id="blockForm">
         <h1>Регистрационная форма для владельцев кошек</h1>
 
-        <form name="catForm" novalidate onsubmit="return validateForm()">
-          <label for="login">Логин:</label>
-          <input
+        <form class="form" name="catForm" novalidate onsubmit="return validateForm()">
+
+          <div class="form__field">
+            <label class="form__label" for="login">Логин:</label>
+          <input 
+            class="form__input"
             type="text"
             placeholder="Введите логин"
             id="login"
@@ -149,11 +152,13 @@
             required
             minlength="2"
             maxlength="20"
-            pattern="[A-Za-z\s]+"
-          /><br /><br />
+            pattern="[A-Za-z\s]+"/>
+          </div>
 
-          <label for="name">Имя владельца:</label>
-          <input
+          <div class="form__field">
+          <label class="form__label" for="name">Имя владельца:</label>
+          <input 
+            class="form__input"
             type="text"
             placeholder="Введите свое имя"
             id="name"
@@ -161,32 +166,37 @@
             required
             minlength="2"
             maxlength="20"
-            pattern="[A-Za-z\s]+"
-          /><br /><br />
+            pattern="[A-Za-z\s]+"/>
+          </div>
 
-          <label for="email">Введите email:</label>
+          <div class="form__field">
+          <label class="form__label" for="email">Введите email:</label>
           <input
+          class="form__input"
             type="email"
             id="email"
             name="email"
             placeholder="Введите свой email"
-            required
-          /><br /><br />
+            required/>
+          </div>
 
-          <label for="nickname">Имя кошки:</label>
+          <div class="form__field">
+          <label class="form__label" for="nickname">Имя кошки:</label>
           <input
+          class="form__input"
             type="text"
             id="nickname"
             name="nickname"
             placeholder="Введите кличку кошки"
-            required
-          /><br /><br />
+            required/>
+          </div>
 
-          <label for="breed">Порода кошки:</label>
+          <div class="form__field">
+            <label class="form__label" for="breed">Порода кошки:</label>
           <select
+            class="form__select"
             id="breed"
             name="breed"
-            placeholder="Выберите породу"
             required
           >
             <option value="">Выберите породу</option>
@@ -208,79 +218,99 @@
             <option value="burmilla">Бурмилла</option>
             <option value="burmese">Бирманская</option>
             <option value="bengal">Бенгальская</option>
-            <option value="other">Другая</option></select
-          ><br /><br />
+            <option value="other">Другая</option></select>
+          </div>
 
-          <label for="color">Окрас:</label>
-          <input 
-          type="text" 
-          id="color" 
-          name="color" 
-          required /><br /><br />
+          <div class="form__field">
+            <label class="form__label" for="color">Окрас:</label>
+            <input 
+            class="form__input"
+            type="text" 
+            id="color" 
+            name="color" 
+            required />
+          </div>
 
-          <label for="age">Возраст кошки:</label>
-          <input 
-          type="text" 
-          id="age" 
-          name="age" 
-          required /><br /><br />
+          <div class="form__field">
+            <label class="form__label" for="age">Возраст кошки:</label>
+            <input
+            class="form__input" 
+            type="text" 
+            id="age" 
+            name="age" 
+            required />
+          </div>
 
-          <label for="gender">Пол:</label>
-          <input 
-          type="radio" 
-          id="male" 
-          name="gender" 
-          value="male" 
-          required />
-          <label for="male">Мужской</label>
-          <input
-            type="radio"
-            id="female"
-            name="gender"
-            value="female"
-            required
-          />
-          <label for="female">Женский</label><br /><br />
+          <div class="form__field">
+            <label class="form__label" for="gender">Пол:</label>
+            <input 
+            class="form__input"
+            type="radio" 
+            id="male" 
+            name="gender" 
+            value="male" 
+            required />
+            <label class="form__label" for="male">Мужской</label>
+            <input
+            class="form__input"
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              required
+            />
+            <label class="form__label" for="female">Женский</label>
+          </div>
 
-          <label for="skill"> Умения, команды, трюки:</label>
-          <input
-            type="text"
-            placeholder="Что умеет делать питомец"
-            id="skill"
-            name="skill"
-          /><br /><br />
+          <div class="form__field">
+            <label class="form__label" for="skill"> Умения, команды, трюки:</label>
+            <input
+            class="form__input"
+              type="text"
+              placeholder="Что умеет делать питомец"
+              id="skill"
+              name="skill"/>
+          </div>
 
-          <label for="password">Пароль:</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Введите пароль"
-            required
-            minlength="8"
-            pattern="^(?=.*[a-z])(?=.*[A-Z] ])(?=.*\d).+$"
-          /><br /><br />
+          <div class="form__field">
+            <label class="form__label" for="password">Пароль:</label>
+            <input
+            class="form__input"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Введите пароль"
+              required
+              minlength="8"
+              pattern="^(?=.*[a-z])(?=.*[A-Z] ])(?=.*\d).+$"/>
+          </div>
 
-          <label for="repeatPassword">Повторить пароль:</label>
-          <input
-            type="password"
-            id="repeatPassword"
-            name="repeatPassword"
-            placeholder="Повторите свой пароль"
-            required
-            minlength="8"
-            pattern="^(?=.*[a-z])(?=.*[A-Z] ])(?=.*\d).+$"
-          /><br /><br />
+          <div class="form__field">
+            <label class="form__label" for="repeatPassword">Повторить пароль:</label>
+            <input
+            class="form__input"
+              type="password"
+              id="repeatPassword"
+              name="repeatPassword"
+              placeholder="Повторите свой пароль"
+              required
+              minlength="8"
+              pattern="^(?=.*[a-z])(?=.*[A-Z] ])(?=.*\d).+$"/>
+          </div>
 
-          <label for="consent">Я даю согласие на обработку данных:</label>
-          <input
-            type="checkbox"
-            id="approval"
+          <div class="form__field form__field--checkbox">
+            <input 
+            class="form__checkbox" 
+            type="checkbox" 
+            id="approval" 
             name="approval"
-            required
-          /><br /><br />
+            required/>
+            <label class="form__label form__label--checkbox" for="consent">Я даю согласие на обработку данных</label>
+          </div>
 
-          <input type="submit" value="Отправить" />
+          <div class="form__field">
+          <input class="form__submit" type="submit" value="Отправить" />
+          </div>
         </form>
       </article>
       <!-- Блок игры, отвечает Маша -->
@@ -360,9 +390,11 @@
 </article>
 <!-- Блок информационной страницы про кота, отвечает Катя -->
 <article id="blockMap">
-<div class="map__body">
+<h2 class="h2">Усы, лапы и хвост – вот мои документы!</h2>
+<div class="wrapper">
+    <div class="map__body">
   <div id="01" class="map__item">
-    <img class="map__image" src="/assets/images/cat_map_1.jpg" alt="часть_1">
+    <img data-tooltip="Хвост диктует коту направление движения, эмоции и даже периодически подсказывает мурчащему аппарату, как наиболее выгодным образом раскрутить хозяина на еду." class="map__image" src="/assets/images/cat_map_1.jpg" alt="часть_1">
   </div>
   <div id="02"class="map__item">
     <img class="map__image" src="/assets/images/cat_map_2.jpg" alt="часть_2">
@@ -380,6 +412,7 @@
     <img class="map__image" src="/assets/images/cat_map_6.jpg" alt="часть_6">
   </div>
 </div>
+</div>
 </article>
     </main>
     <footer></footer>
@@ -388,5 +421,6 @@
     <script src="assets/js/form.js"></script>
     <script src="assets/js/random.js"></script>
     <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/map.js"></script>
   </body>
 </html>
