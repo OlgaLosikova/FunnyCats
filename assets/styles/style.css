@@ -254,22 +254,74 @@
   font-family: "Futura New";
 }
 
-.form {
-  font-family: "Futura New";
-  background-color: #ffc59e;
-  text-align: center;
-  font-size: 25px;
-  padding: 20px;
-  box-sizing: border-box;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  max-width: 674px;
+
 }
 
-h1 {
-  text-align: center;
+.map__body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px;
 }
 
-.form__field {
-  padding: 5px;
+.map__item{
+  margin:-3px;
 }
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  cursor: pointer;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.modal__main {
+  position: relative;
+  max-width: 600px;
+  background-color: azure;
+  margin: auto;
+  color: black;
+  border-radius: 16px;
+  padding: 30px;
+  cursor: default;
+}
+
+.modal__title {
+  margin-bottom: 30px;;
+}
+
+.modal__close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  outline: 1px solid transparent;
+  outline-offset: 3px;
+  transition: outline-color .15s ease-in-out;
+  border-radius: 3px;
+  padding: 0;
+  text-align: center;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.modal__close:focus-visible{
+  outline-color: green;
+}
+
+
 
 .main {
   margin-top: 130px;
