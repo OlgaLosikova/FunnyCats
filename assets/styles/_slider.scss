@@ -20,50 +20,47 @@
       grid-row-end: 2;
       grid-column-start: 1;
       grid-column-end: 2;
-      margin-top: 5px;
+      margin-top: 12px;
     }
-
+    .slider-points__paragraph {
+      cursor: pointer;
+      font-size: 20px;
+    }
     .slider-points__item1 {
       grid-row-start: 1;
       grid-row-end: 2;
       grid-column-start: 1;
       grid-column-end: 2;
-      cursor: pointer;
     }
     .slider-points__item2 {
       grid-row-start: 2;
       grid-row-end: 3;
       grid-column-start: 1;
       grid-column-end: 2;
-      cursor: pointer;
     }
     .slider-points__item3 {
       grid-row-start: 3;
       grid-row-end: 4;
       grid-column-start: 1;
       grid-column-end: 2;
-      cursor: pointer;
     }
     .slider-points__item4 {
       grid-row-start: 4;
       grid-row-end: 5;
       grid-column-start: 1;
       grid-column-end: 2;
-      cursor: pointer;
     }
     .slider-points__item5 {
       grid-row-start: 5;
       grid-row-end: 6;
       grid-column-start: 1;
       grid-column-end: 2;
-      cursor: pointer;
     }
     .slider-points__item6 {
       grid-row-start: 6;
       grid-row-end: 7;
       grid-column-start: 1;
       grid-column-end: 2;
-      cursor: pointer;
     }
   }
   .slider-container {
