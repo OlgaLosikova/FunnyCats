@@ -1,6 +1,6 @@
 # Funny cats
 
-![Funny Cats greeting picture](image.png)
+![Funny Cats greeting picture](assets/images/readmelogo.png)
 
 ## Description
 
@@ -12,7 +12,7 @@ A page for cat lovers that will cheer you up. Shows random facts about cats, mak
 - Random cat quote
 - Guide to cat's anatomy
 
-![Funny Cats website screenshot](image-1.png)
+![Funny Cats website screenshot](assets/images/website.png)
 
 ## How to use
 
