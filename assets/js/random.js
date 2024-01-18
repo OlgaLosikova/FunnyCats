@@ -1,17 +1,33 @@
-const qoute = document.getElementById('qoute' );
-const btn = document.getElementById('btn');
-const img_rndm = document.getElementById('img_rndm');
+const qoute = document.getElementById('qoute__p' );
+const qouteImg = document.getElementById('qoute__img');
+const btn = document.getElementById('container__btn');
 
-const randomQuote= ()=> {
- fetch ('https://api.quotable.io/random')
-    .then((resp) => resp.json())
-    .then((data) => {
-        qoute.innerHTML =  data.content;  }
- )
- fetch ('https://api.thecatapi.com/v1/images/search')
+const randomImg = ()=> {
+  fetch ('https://api.thecatapi.com/v1/images/search')
  .then((resp) => resp.json())
- .then(json => img_rndm.src = json[0].url
+ .then((data) => qouteImg.src = data[0].url
 )
     }
+ const quotes = [
+        'Пусть всё будет заМУРчательно',
+        'Пушистая жизненная философия: если тебе попалась лимонадная жизнь, добавь немного котика и получишь вкуснейший день!',
+    "Когда жизнь кажется тяжелой, помни: котики тоже могут заснуть на самых высоких ветках, но всегда просыпаются на своих лапках!",
+    "Будь как котик: несмотря на все трудности, найди свою коробку комфорта и засыпай с мыслью, что завтра будет лучше!",
+    "Как котики, мы можем прыгнуть через любое препятствие, если верим в себя и заряжаем свой день позитивом!",
+    "Забудь о своих кошачьих ошибках вчера и просто нарисуй свой следаплан на пушистом листе бумаги сегодня!",
+    "Не забывай: когда жизнь швыряет тебе лимоны, подставь свои котиные лапки и начни танцевать под музыку радуги!",
+    "Будь как котик, играющий с мячиком: даже если он убежит, всегда найдется новый мячик, за которым стоит погоня!",
+    "Когда тебе кажется, что мир слишком большой и сложный, вспомни, что котики тоже справляются – шаг за шагом, шаг за пушистиком!",
+    ]
+const randomQuote = () => { 
+    const length = quotes.length;
+    const a = Math.floor (Math.random()*length);
+    qoute.innerHTML = quotes[a];
+}
 
-btn.addEventListener('click', randomQuote)
+const randomAll = () => {
+    randomImg(),
+    randomQuote()
+}
+
+btn.addEventListener('click',  randomAll) ;
