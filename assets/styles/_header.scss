@@ -6,31 +6,35 @@
   background-color: $bgcolorlight;
   font-family: $fontmain;
   font-weight: 700;
-
   text-transform: uppercase;
-  .header__nav {
+  .header-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    .header__logo {
+    .header-logo {
       width: 100px;
       height: 100px;
     }
-    .nav-list {
+    .header-nav {
       display: flex;
-      justify-content: flex-end;
-      padding-inline-start: 0;
-      list-style-type: none;
-      font-size: 20px;
-      
-      .nav-list__item {
-        float: left;
-        margin-left: 5vw;
-        color: $colortextgray;
-        text-decoration: none;
-      }
-      .nav-list__item:hover {
-        text-decoration: underline;
+      justify-content: space-between;
+      align-items: center;
+
+      .nav-list {
+        display: flex;
+        justify-content: flex-end;
+        padding-inline-start: 0;
+        list-style-type: none;
+        font-size: 20px;
+
+        .nav-list__item {
+          float: left;
+          margin-left: 5vw;
+          color: $colortextgray;
+          text-decoration: none;
+        }
+        .nav-list__item:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
