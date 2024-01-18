@@ -137,7 +137,8 @@
 }
 .slider .slider-container .slider-line .slider-card .slider-card__img {
   border-radius: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 502px;
   height: 502px;
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.1);
@@ -216,6 +217,8 @@
 .qoute__img {
   width: 300px;
   height: 300px;
+  border-radius: 10px;
+  padding-left: 30px;
 }
 
 .qoute__p {
@@ -229,9 +232,19 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
-
-.container__p {
+.container .container__p {
   font-family: "Futura New";
+  font-size: 30px;
+}
+
+.btntobe_img {
+  width: 130px;
+  height: 130px;
+}
+
+.btntobe_img :active {
+  transform: scale(1.2);
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .h2 {
@@ -269,6 +282,4 @@ h1 {
   font-family: "Futura New";
   font-style: normal;
   font-weight: 400;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

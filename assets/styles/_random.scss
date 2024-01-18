@@ -7,6 +7,8 @@
 .qoute__img {
     width: 300px;
     height: 300px;
+    border-radius: 10px;
+    padding-left:30px ;
 }
 
 .qoute__p {
@@ -17,11 +19,25 @@
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly   ;
-}
-.container__p {
-    font-family: $fontmain; 
-}
+    justify-content: space-evenly;
+
+    .container__p {
+        font-family: $fontmain;
+        font-size: 30px; 
+    }
+    
+    }
+
+    .btntobe_img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .btntobe_img :active {
+        transform: scale(1.2);
+        box-shadow: $bgshadow;
+    }
+
 .h2 {
    text-align: center;
    font-size: 60px;
