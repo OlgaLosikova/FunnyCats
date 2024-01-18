@@ -23,7 +23,9 @@
               >
             </li>
             <li><a class="nav-list__item" href="#blockGame">играть</a></li>
-            <li><a class="nav-list__item" href="#blockRndm">фото и факт</a></li>
+            <li>
+              <a class="nav-list__item" href="#blockRndm">фото и цитата</a>
+            </li>
             <li><a class="nav-list__item" href="#blockMap">карта кота</a></li>
           </ul>
         </nav>
@@ -489,12 +491,19 @@
           <h2 class="rndm__header h2">Не грусти!</h2>
           <div class="rndm__container container">
             <p class="container__p">
-              Если тебе грустно! нажимай скорее на кнопку и веселый котик
+              Если тебе грустно! нажимай скорее на лапку и веселый котик
               поднимет тебе настроение! Мяу
             </p>
-            <button clas s="container__btn" id="container__btn">
+            <div class="container__btntobe btntobe" id="btntobe">
+              <img
+                class="btntobe_img"
+                src="assets/images/img_random_paw.jpg"
+                alt="лапка"
+              />
+            </div>
+            <!-- <button class="container__btn" id="container__btn">
               <p class="container__p">Мяу!</p>
-            </button>
+            </button> -->
           </div>
           <div class="rndm__qoute qoute">
             <img
@@ -560,6 +569,17 @@
         <div class="modal">
           <div class="modal__main">
             <!-- <h2 class="modal__title">Модальное окно</h2> -->
+
+            <div class="modal__container">
+              <p>Какой-то текст</p>
+            </div>
+
+            <button class="modal__close">&#10006;</button>
+          </div>
+        </div>
+        <div class="modal">
+          <div class="modal__main">
+            <!-- <h2 class="modal__title">Модальное окно</h2> -->
             <div class="modal__container">
               <p>Какой-то текст</p>
             </div>
@@ -568,7 +588,28 @@
         </div>
       </article>
     </main>
-    <footer></footer>
+    <footer class="header">
+      <div class="header-container">
+        <img class="header-logo" src="assets/svg/logo.svg" alt="logo" />
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li>
+              <a href="#blockSlider" class="nav-list__item">знаменитые коты</a>
+            </li>
+            <li>
+              <a class="nav-list__item" href="#blockForm"
+                >вступить в сообщество</a
+              >
+            </li>
+            <li><a class="nav-list__item" href="#blockGame">играть</a></li>
+            <li>
+              <a class="nav-list__item" href="#blockRndm">фото и цитата</a>
+            </li>
+            <li><a class="nav-list__item" href="#blockMap">карта кота</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/game.js"></script>
     <script src="assets/js/form.js"></script>
