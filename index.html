@@ -11,249 +11,328 @@
   <body>
     <header class="header">
       <div class="header-container">
-        <div class="header__nav">
-          <img class="header__logo" src="assets/svg/logo.svg" alt="logo" />
-          <nav class="header__menu">
-            <ul class="nav-list">
-              <li><a href="#blockSlider" class="nav-list__item">знаменитые коты</a></li>
-              <li><a class="nav-list__item" href="#blockForm">вступить в сообщество</a></li>
-              <li><a class="nav-list__item" href="#blockGame">играть</a></li>
-              <li><a class="nav-list__item" href="#blockRndm">фото и факт</a></li>
-              <li><a class="nav-list__item" href="#blockMap">карта кота</a></li>
-                          </ul>
-          </nav>
-        </div>
+        <img class="header-logo" src="assets/svg/logo.svg" alt="logo" />
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li>
+              <a href="#blockSlider" class="nav-list__item">знаменитые коты</a>
+            </li>
+            <li>
+              <a class="nav-list__item" href="#blockForm"
+                >вступить в сообщество</a
+              >
+            </li>
+            <li><a class="nav-list__item" href="#blockGame">играть</a></li>
+            <li><a class="nav-list__item" href="#blockRndm">фото и факт</a></li>
+            <li><a class="nav-list__item" href="#blockMap">карта кота</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
       <!-- Блок слайдер, отвечает Оля -->
       <article id="blockSlider">
         <div class="slider">
-          
           <div class="slider-points">
-            <img class="slider-points__arc slider-points__arc_mixing2" src="assets/svg/process.svg" alt="process" />
-            <p class="slider__text_paragraph slider-points__item1">1</p>
-            <p class="slider__text_paragraph slider-points__item2">2</p>
-            <p class="slider__text_paragraph slider-points__item3">3</p>
-            <p class="slider__text_paragraph slider-points__item4">4</p>
-            <p class="slider__text_paragraph slider-points__item5">5</p>
-            <p class="slider__text_paragraph slider-points__item6">6</p>
-            
+            <img
+              class="slider-points__arc"
+              src="assets/svg/process.svg"
+              alt="process"
+            />
+            <p class="slider-points__paragraph slider-points__item1">1</p>
+            <p class="slider-points__paragraph slider-points__item2">2</p>
+            <p class="slider-points__paragraph slider-points__item3">3</p>
+            <p class="slider-points__paragraph slider-points__item4">4</p>
+            <p class="slider-points__paragraph slider-points__item5">5</p>
+            <p class="slider-points__paragraph slider-points__item6">6</p>
           </div>
           <div class="slider-container">
-            <div class="slider-line"><div class="slider-card">
-              <div class="slider__text">
-                <h2 class="slider__text_header" id="catHeader">Нала</h2>
-                
-                  <strong>Локация:</strong><p class="slider__text_paragraph" id="catLocation">Лос-Анжелес, США</p> 
-                </p>
-                
-                  <strong>Порода:</strong> <p class="slider__text_paragraph" id="catBreed">микс сиамской и персидской кошки</p>
-                </p>
-                <p class="slider__text_paragraph" id="catInfo">
-                  Вполне возможно, что вы видели эту красивую кошку ранее и это не удивительно, потому что у Налы 4,5 млн подписчиков в Instagram, звание TikToker года и состояние в $100 млн долларов. Эта восхитительная кошка с круглыми голубыми глазами не всегда была окружена любовью - будучи крошечным котенком, она была сдана в приют, где находилась какое-то время. К счастью, она нашла любящюю хозяйку.
-                </p>
+            <div class="slider-line">
+              <div class="slider-card">
+                <div class="slider-card__text">
+                  <h1 class="slider-card__header">Нала</h1>
+
+                  <strong>Локация:</strong>
+                  <p class="slider-card__paragraph" id="catLocation">
+                    Лос-Анжелес, США
+                  </p>
+
+                  <strong>Порода:</strong>
+                  <p class="slider-card__paragraph" id="catBreed">
+                    микс сиамской и персидской кошки
+                  </p>
+                  <p class="slider-card__paragraph" id="catInfo">
+                    Вполне возможно, что вы видели эту красивую кошку ранее и
+                    это не удивительно, потому что у Налы 4,5 млн подписчиков в
+                    Instagram, звание TikToker года и состояние в $100 млн
+                    долларов. Эта восхитительная кошка с круглыми голубыми
+                    глазами не всегда была окружена любовью - будучи крошечным
+                    котенком, она была сдана в приют, где находилась какое-то
+                    время. К счастью, она нашла любящюю хозяйку.
+                  </p>
+                </div>
+                <img
+                  class="slider-card__img"
+                  src="assets/images/nala.jpg"
+                  alt="nala"
+                />
               </div>
-              <img class="slider__img" src="assets/images/nala.jpg" alt="nala" />
-            </div>
-            <div class="slider-card">
-              <div class="slider__text">
-                <h2 class="slider__text_header" id="catHeader">Полковник Мяу</h2>
-                
-                  <strong>Локация:</strong><p class="slider__text_paragraph" id="catLocation">Лос-Анжелес, США</p> 
-                </p>
-                
-                  <strong>Порода:</strong> <p class="slider__text_paragraph" id="catBreed">гималайско-персидская</p>
-                </p>
-                <p class="slider__text_paragraph" id="catInfo">
-                  Занял первое место в мире по пушистости по версии книги рекордов Гиннеса. До 2 лет находился в приюте, откуда его забрали хозяева. Такую необычную кличку кот получил в связи с хмуро-зловещим выражением его мордочки и огромным количеством шерсти.
-                </p>
+              <div class="slider-card">
+                <div class="slider-card__text">
+                  <h1 class="slider-card__header">Полковник Мяу</h1>
+
+                  <strong>Локация:</strong>
+                  <p class="slider-card__paragraph">Лос-Анжелес, США</p>
+
+                  <strong>Порода:</strong>
+                  <p class="slider-card__paragraph">гималайско-персидская</p>
+
+                  <p class="slider-card__paragraph">
+                    Занял первое место в мире по пушистости по версии книги
+                    рекордов Гиннеса. До 2 лет находился в приюте, откуда его
+                    забрали хозяева. Такую необычную кличку кот получил в связи
+                    с хмуро-зловещим выражением его мордочки и огромным
+                    количеством шерсти.
+                  </p>
+                </div>
+                <img
+                  class="slider-card__img"
+                  src="assets/images/colonelmeow.jpg"
+                  alt="colonelmeow"
+                />
               </div>
-              <img class="slider__img" src="assets/images/colonelmeow.jpg" alt="colonelmeow" />
-            </div>
-            <div class="slider-card">
-              <div class="slider__text">
-                <h2 class="slider__text_header" id="catHeader">Гарфи</h2>
-                
-                  <strong>Локация:</strong><p class="slider__text_paragraph" id="catLocation">Турция</p> 
-                </p>
-                
-                  <strong>Порода:</strong> <p class="slider__text_paragraph" id="catBreed">персидская</p>
-                </p>
-                <p class="slider__text_paragraph" id="catInfo">
-                  Несмотря на свой грозный вид, Гарфи - один из самых добрых котов в мире. Гарфи, как и все обычные коты, тоже любит залезать в коробки и ящики, бегать за мышкой и посидеть под мокрым зонтиком. Он прекрасная фотомодель и его сходство с настоящим Гарфилдом просто поразительно. А его хозяйка-фотограф сделал его настоящей звездой интернета.
-                </p>
+              <div class="slider-card">
+                <div class="slider-card__text">
+                  <h1 class="slider-card__header">Гарфи</h1>
+
+                  <strong>Локация:</strong>
+                  <p class="slider-card__paragraph">Турция</p>
+
+                  <strong>Порода:</strong>
+                  <p class="slider-card__paragraph">персидская</p>
+
+                  <p class="slider-card__paragraph">
+                    Несмотря на свой грозный вид, Гарфи - один из самых добрых
+                    котов в мире. Гарфи, как и все обычные коты, тоже любит
+                    залезать в коробки и ящики, бегать за мышкой и посидеть под
+                    мокрым зонтиком. Он прекрасная фотомодель и его сходство с
+                    настоящим Гарфилдом просто поразительно. А его
+                    хозяйка-фотограф сделал его настоящей звездой интернета.
+                  </p>
+                </div>
+                <img
+                  class="slider-card__img"
+                  src="assets/images/garfy.jpg"
+                  alt="colonelmeow"
+                />
               </div>
-              <img class="slider__img" src="assets/images/garfy.jpg" alt="colonelmeow" />
-            </div>
-            <div class="slider-card">
-              <div class="slider__text">
-                <h2 class="slider__text_header" id="catHeader">Сердитая кошка</h2>
-                
-                  <strong>Локация:</strong><p class="slider__text_paragraph" id="catLocation">Морристаун, США</p> 
-                </p>
-                
-                  <strong>Порода:</strong> <p class="slider__text_paragraph" id="catBreed">сноу-шу</p>
-                </p>
-                <p class="slider__text_paragraph" id="catInfo">
-                  Кошка, ставшая интернет-знаменитостью благодаря необычной внешности после того, как брат её хозяйки в сентябре 2012 года разместил фотографию кошки на сайте Reddit. По словам хозяйки, Табаты Бундесен, подобная внешность связана с врождённой карликовостью и неправильным прикусом.
-                </p>
+              <div class="slider-card">
+                <div class="slider-card__text">
+                  <h1 class="slider-card__header">Сердитая кошка</h1>
+
+                  <strong>Локация:</strong>
+                  <p class="slider-card__paragraph">Морристаун, США</p>
+
+                  <strong>Порода:</strong>
+                  <p class="slider-card__paragraph">сноу-шу</p>
+
+                  <p class="slider-card__paragraph">
+                    Кошка, ставшая интернет-знаменитостью благодаря необычной
+                    внешности после того, как брат её хозяйки в сентябре 2012
+                    года разместил фотографию кошки на сайте Reddit. По словам
+                    хозяйки, Табаты Бундесен, подобная внешность связана с
+                    врождённой карликовостью и неправильным прикусом.
+                  </p>
+                </div>
+                <img
+                  class="slider-card__img"
+                  src="assets/images/grumpycat.jpg"
+                  alt="grumpycat"
+                />
               </div>
-              <img class="slider__img" src="assets/images/grumpycat.jpg" alt="grumpycat" />
+              <div class="slider-card">
+                <div class="slider-card__text">
+                  <h2 class="slider-card__header">Широ Неко</h2>
+
+                  <strong>Локация:</strong>
+                  <p class="slider-card__paragraph">Япония</p>
+
+                  <strong>Порода:</strong>
+                  <p class="slider-card__paragraph">турецкая ван</p>
+
+                  <p class="slider-card__paragraph">
+                    Широ Неко - кот, постигший дзен. Считается самым ленивым и
+                    безмятежным котом в мире. Понаблюдайте за умиротворенным
+                    выражением его славной мордашки, обратите внимание на его
+                    сонный вид, посмотрите на те вещи, которые он безропотно
+                    позволяет с собой вытворять, а потом делайте выводы.
+                  </p>
+                </div>
+                <img
+                  class="slider-card__img"
+                  src="assets/images/shironeko.jpg"
+                  alt="shironeko"
+                />
+              </div>
+              <div class="slider-card">
+                <div class="slider-card__text">
+                  <h1 class="slider-card__header">Снупи</h1>
+
+                  <strong>Локация:</strong>
+                  <p class="slider-card__paragraph">Чэнду, Китай</p>
+
+                  <strong>Порода:</strong>
+                  <p class="slider-card__paragraph">
+                    экзотическая короткошерстная
+                  </p>
+
+                  <p class="slider-card__paragraph">
+                    У Снупи милая мордашка, огромные глаза и плюшевая шерстка -
+                    все это не может оставить равнодушными тех, кто его видит.
+                    Глядя на него, кажется, что Снупи это красивая мягкая
+                    игрушка. Неудивительно, что этот кот стал настоящей звездой
+                    интернета. У Снуппи несколько миллионов поклонников со всего
+                    мира, свой канал на youtube и страничка на facebook.
+                  </p>
+                </div>
+                <img
+                  class="slider-card__img"
+                  src="assets/images/snoopy.jpg"
+                  alt="snoopy"
+                />
+              </div>
             </div>
-            <div class="slider-card">
-            <div class="slider__text">
-              <h2 class="slider__text_header" id="catHeader">Широ Неко</h2>
-              
-                <strong>Локация:</strong><p class="slider__text_paragraph" id="catLocation">Япония</p> 
-              </p>
-              
-                <strong>Порода:</strong> <p class="slider__text_paragraph" id="catBreed">турецкая ван</p>
-              </p>
-              <p class="slider__text_paragraph" id="catInfo">
-                Широ Неко - кот, постигший дзен. Считается самым ленивым и безмятежным котом в мире. Понаблюдайте за умиротворенным выражением его славной мордашки, обратите внимание на его сонный вид, посмотрите на те вещи, которые он безропотно позволяет с собой вытворять, а потом делайте выводы.
-              </p>
-            </div>
-            <img class="slider__img" src="assets/images/shironeko.jpg" alt="shironeko" />
-          </div>
-          <div class="slider-card">
-            <div class="slider__text">
-              <h2 class="slider__text_header" id="catHeader">Снупи</h2>
-              
-                <strong>Локация:</strong><p class="slider__text_paragraph" id="catLocation">Чэнду, Китай</p> 
-              </p>
-              
-                <strong>Порода:</strong> <p class="slider__text_paragraph" id="catBreed">экзотическая короткошерстная</p>
-              </p>
-              <p class="slider__text_paragraph" id="catInfo">
-                У Снупи милая мордашка, огромные глаза и плюшевая шерстка - все это не может оставить равнодушными тех, кто его видит. Глядя на него, кажется, что Снупи это красивая мягкая игрушка. Неудивительно, что этот кот стал настоящей звездой интернета. У Снуппи несколько миллионов поклонников со всего мира, свой канал на youtube и страничка на facebook.
-              </p>
-            </div>
-            <img class="slider__img" src="assets/images/snoopy.jpg" alt="snoopy" />
-          </div></div>
-            
           </div>
         </div>
       </article>
-      
+
       <!-- Блок форма данных о питомце, отвечает Ира -->
       <article id="blockForm">
         <h1>Регистрационная форма для владельцев кошек</h1>
 
-        <form class="form" name="catForm" novalidate onsubmit="return validateForm()">
-
+        <form
+          class="form"
+          name="catForm"
+          novalidate
+          onsubmit="return validateForm()"
+        >
           <div class="form__field">
             <label class="form__label" for="login">Логин:</label>
-          <input 
-            class="form__input"
-            type="text"
-            placeholder="Введите логин"
-            id="login"
-            name="login"
-            required
-            minlength="2"
-            maxlength="20"
-            pattern="[A-Za-z\s]+"/>
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Введите логин"
+              id="login"
+              name="login"
+              required
+              minlength="2"
+              maxlength="20"
+              pattern="[A-Za-z\s]+"
+            />
           </div>
 
           <div class="form__field">
-          <label class="form__label" for="name">Имя владельца:</label>
-          <input 
-            class="form__input"
-            type="text"
-            placeholder="Введите свое имя"
-            id="name"
-            name="name"
-            required
-            minlength="2"
-            maxlength="20"
-            pattern="[A-Za-z\s]+"/>
+            <label class="form__label" for="name">Имя владельца:</label>
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Введите свое имя"
+              id="name"
+              name="name"
+              required
+              minlength="2"
+              maxlength="20"
+              pattern="[A-Za-z\s]+"
+            />
           </div>
 
           <div class="form__field">
-          <label class="form__label" for="email">Введите email:</label>
-          <input
-          class="form__input"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Введите свой email"
-            required/>
+            <label class="form__label" for="email">Введите email:</label>
+            <input
+              class="form__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Введите свой email"
+              required
+            />
           </div>
 
           <div class="form__field">
-          <label class="form__label" for="nickname">Имя кошки:</label>
-          <input
-          class="form__input"
-            type="text"
-            id="nickname"
-            name="nickname"
-            placeholder="Введите кличку кошки"
-            required/>
+            <label class="form__label" for="nickname">Имя кошки:</label>
+            <input
+              class="form__input"
+              type="text"
+              id="nickname"
+              name="nickname"
+              placeholder="Введите кличку кошки"
+              required
+            />
           </div>
 
           <div class="form__field">
             <label class="form__label" for="breed">Порода кошки:</label>
-          <select
-            class="form__select"
-            id="breed"
-            name="breed"
-            required
-          >
-            <option value="">Выберите породу</option>
-            <option value="abyssinian">Абиссинская</option>
-            <option value="asian">Азиатская</option>
-            <option value="balinese">Балийская</option>
-            <option value="turkish Van">Турецкий Ван</option>
-            <option value="australian Mist">Австралийский Мист</option>
-            <option value="tonkinese">Тонкинская</option>
-            <option value="siamese">Сиамская</option>
-            <option value="scottish lop-eared">Шотландская вислоухая</option>
-            <option value="savannah">Саванна</option>
-            <option value="russian blue">Русская голубая</option>
-            <option value="persian longhair">Персидская длинношерстная</option>
-            <option value="ocicat">Оцикет</option>
-            <option value="munchkin">Манчкин</option>
-            <option value="chinchilla">Шиншилла</option>
-            <option value="cornish Rex">Корниш-рекс</option>
-            <option value="burmilla">Бурмилла</option>
-            <option value="burmese">Бирманская</option>
-            <option value="bengal">Бенгальская</option>
-            <option value="other">Другая</option></select>
+            <select class="form__select" id="breed" name="breed" required>
+              <option value="">Выберите породу</option>
+              <option value="abyssinian">Абиссинская</option>
+              <option value="asian">Азиатская</option>
+              <option value="balinese">Балийская</option>
+              <option value="turkish Van">Турецкий Ван</option>
+              <option value="australian Mist">Австралийский Мист</option>
+              <option value="tonkinese">Тонкинская</option>
+              <option value="siamese">Сиамская</option>
+              <option value="scottish lop-eared">Шотландская вислоухая</option>
+              <option value="savannah">Саванна</option>
+              <option value="russian blue">Русская голубая</option>
+              <option value="persian longhair">
+                Персидская длинношерстная
+              </option>
+              <option value="ocicat">Оцикет</option>
+              <option value="munchkin">Манчкин</option>
+              <option value="chinchilla">Шиншилла</option>
+              <option value="cornish Rex">Корниш-рекс</option>
+              <option value="burmilla">Бурмилла</option>
+              <option value="burmese">Бирманская</option>
+              <option value="bengal">Бенгальская</option>
+              <option value="other">Другая</option>
+            </select>
           </div>
 
           <div class="form__field">
             <label class="form__label" for="color">Окрас:</label>
-            <input 
-            class="form__input"
-            type="text" 
-            id="color" 
-            name="color" 
-            required />
+            <input
+              class="form__input"
+              type="text"
+              id="color"
+              name="color"
+              required
+            />
           </div>
 
           <div class="form__field">
             <label class="form__label" for="age">Возраст кошки:</label>
             <input
-            class="form__input" 
-            type="text" 
-            id="age" 
-            name="age" 
-            required />
+              class="form__input"
+              type="text"
+              id="age"
+              name="age"
+              required
+            />
           </div>
 
           <div class="form__field">
             <label class="form__label" for="gender">Пол:</label>
-            <input 
-            class="form__input"
-            type="radio" 
-            id="male" 
-            name="gender" 
-            value="male" 
-            required />
+            <input
+              class="form__input"
+              type="radio"
+              id="male"
+              name="gender"
+              value="male"
+              required
+            />
             <label class="form__label" for="male">Мужской</label>
             <input
-            class="form__input"
+              class="form__input"
               type="radio"
               id="female"
               name="gender"
@@ -264,157 +343,221 @@
           </div>
 
           <div class="form__field">
-            <label class="form__label" for="skill"> Умения, команды, трюки:</label>
+            <label class="form__label" for="skill">
+              Умения, команды, трюки:</label
+            >
             <input
-            class="form__input"
+              class="form__input"
               type="text"
               placeholder="Что умеет делать питомец"
               id="skill"
-              name="skill"/>
+              name="skill"
+            />
           </div>
 
           <div class="form__field">
             <label class="form__label" for="password">Пароль:</label>
             <input
-            class="form__input"
+              class="form__input"
               type="password"
               id="password"
               name="password"
               placeholder="Введите пароль"
               required
               minlength="8"
-              pattern="^(?=.*[a-z])(?=.*[A-Z] ])(?=.*\d).+$"/>
+              pattern="^(?=.*[a-z])(?=.*[A-Z] ])(?=.*\d).+$"
+            />
           </div>
 
           <div class="form__field">
-            <label class="form__label" for="repeatPassword">Повторить пароль:</label>
+            <label class="form__label" for="repeatPassword"
+              >Повторить пароль:</label
+            >
             <input
-            class="form__input"
+              class="form__input"
               type="password"
               id="repeatPassword"
               name="repeatPassword"
               placeholder="Повторите свой пароль"
               required
               minlength="8"
-              pattern="^(?=.*[a-z])(?=.*[A-Z] ])(?=.*\d).+$"/>
+              pattern="^(?=.*[a-z])(?=.*[A-Z] ])(?=.*\d).+$"
+            />
           </div>
 
           <div class="form__field form__field--checkbox">
-            <input 
-            class="form__checkbox" 
-            type="checkbox" 
-            id="approval" 
-            name="approval"
-            required/>
-            <label class="form__label form__label--checkbox" for="consent">Я даю согласие на обработку данных</label>
+            <input
+              class="form__checkbox"
+              type="checkbox"
+              id="approval"
+              name="approval"
+              required
+            />
+            <label class="form__label form__label--checkbox" for="consent"
+              >Я даю согласие на обработку данных</label
+            >
           </div>
 
           <div class="form__field">
-          <input class="form__submit" type="submit" value="Отправить" />
+            <input class="form__submit" type="submit" value="Отправить" />
           </div>
         </form>
       </article>
       <!-- Блок игры, отвечает Маша -->
       <article id="blockGame">
-      <h2 class="game-header">Поиграем?<br><span class="game-header__name"> Найди котику пару</span></h2>
-      <p class="game-text">
-        Подбери каждому пару, чтобы коты не грустили. Чтобы начать, нажми любой
-        квадрат
-      </p>
-      <div class="success-message"></div>
-      <div class="success-gif"></div>
-      <div class="gamecontainer">
-        <div
-          class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1" alt="Белый кот"
-        ></div>
-        <div
-          class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2" alt="Полосатый кот"
-        ></div>
-        <div
-          class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1" alt="Белый кот"
-        ></div>
-        <div
-          class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2" alt="Полосатый кот"
-        ></div>
-        <div
-          class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1" alt="Белый кот"
-        ></div>
-        <div
-          class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2" alt="Полосатый кот"
-        ></div>
-        <div
-          class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1" alt="Белый кот"
-        ></div>
-        <div
-          class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2" alt="Полосатый кот"
-        ></div>
-        <div
-          class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1" alt="Белый кот"
-        ></div>
-        <div
-          class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2" alt="Полосатый кот"
-        ></div>
-        <div
-          class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1" alt="Белый кот"
-        ></div>
-        <div
-          class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2" alt="Полосатый кот"
-        ></div>
-        <div
-          class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1" alt="Белый кот"
-        ></div>
-        <div
-          class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2" alt="Полосатый кот"
-        ></div>
-        <div
-          class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1" alt="Белый кот"
-        ></div>
-        <div
-          class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2" alt="Полосатый кот"
-        ></div>
-      </div>
-    </article>
-<!-- Блок рандомайзер, отвечает Тася -->
-<article id="blockRndm">
-<div class="rndm">
-  <h2 class="rndm__header h2"> Не грусти!</h2>
-  <div class="rndm__container container" >
-    <p class="container__p">Если тебе грустно! нажимай скорее на кнопку и веселый котик поднимет тебе настроение! Мяу</p>
-    <button clas  s="container__btn" id="container__btn">
-    <p class="container__p">Мяу!</p></button>   
-  </div>
-  <div class="rndm__qoute qoute">
-    <img class="qoute__img" id="qoute__img" src="assets/images/cat_4_rndm.jpg" alt="Котик">
-    <p class="qoute__p" id="qoute__p"> Тут будет цитата</p> 
-  </div> 
-  </div>
-</article>
-<!-- Блок информационной страницы про кота, отвечает Катя -->
-<article id="blockMap">
-<h2 class="h2">Усы, лапы и хвост – вот мои документы!</h2>
-<div class="wrapper">
-    <div class="map__body">
-  <div class="map__item">
-    <img id="1" class="map__image" src="/assets/images/cat_map_1.jpg" alt="часть_1">
-  </div>
-  <div class="map__item">
-    <img id="2" class="map__image" src="/assets/images/cat_map_2.jpg" alt="часть_2">
-  </div>
-  <div class="map__item">
-    <img id="3" class="map__image" src="/assets/images/cat_map_3.jpg" alt="часть_3">
-  </div>
-  <div class="map__item">
-    <img id="4" class="map__image" src="/assets/images/cat_map_4.jpg" alt="часть_4">
-  </div>
-  <div class="map__item">
-    <img id="5" class="map__image" src="/assets/images/cat_map_5.jpg" alt="часть_5">
-  </div>
-  <div class="map__item">
-    <img id="6" class="map__image" src="/assets/images/cat_map_6.jpg" alt="часть_6">
-  </div>
-</div>
-</div>
-</article>
+        <h2 class="game-header">
+          Поиграем?<br /><span class="game-header__name">
+            Найди котику пару</span
+          >
+        </h2>
+        <p class="game-text">
+          Подбери каждому пару, чтобы коты не грустили. Чтобы начать, нажми
+          любой квадрат
+        </p>
+        <div class="success-message"></div>
+        <div class="success-gif"></div>
+        <div class="gamecontainer">
+          <div
+            class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1"
+            alt="Белый кот"
+          ></div>
+          <div
+            class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2"
+            alt="Полосатый кот"
+          ></div>
+          <div
+            class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1"
+            alt="Белый кот"
+          ></div>
+          <div
+            class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2"
+            alt="Полосатый кот"
+          ></div>
+          <div
+            class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1"
+            alt="Белый кот"
+          ></div>
+          <div
+            class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2"
+            alt="Полосатый кот"
+          ></div>
+          <div
+            class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1"
+            alt="Белый кот"
+          ></div>
+          <div
+            class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2"
+            alt="Полосатый кот"
+          ></div>
+          <div
+            class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1"
+            alt="Белый кот"
+          ></div>
+          <div
+            class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2"
+            alt="Полосатый кот"
+          ></div>
+          <div
+            class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1"
+            alt="Белый кот"
+          ></div>
+          <div
+            class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2"
+            alt="Полосатый кот"
+          ></div>
+          <div
+            class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1"
+            alt="Белый кот"
+          ></div>
+          <div
+            class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2"
+            alt="Полосатый кот"
+          ></div>
+          <div
+            class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1"
+            alt="Белый кот"
+          ></div>
+          <div
+            class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2"
+            alt="Полосатый кот"
+          ></div>
+        </div>
+      </article>
+      <!-- Блок рандомайзер, отвечает Тася -->
+      <article id="blockRndm">
+        <div class="rndm">
+          <h2 class="rndm__header h2">Не грусти!</h2>
+          <div class="rndm__container container">
+            <p class="container__p">
+              Если тебе грустно! нажимай скорее на кнопку и веселый котик
+              поднимет тебе настроение! Мяу
+            </p>
+            <button clas s="container__btn" id="container__btn">
+              <p class="container__p">Мяу!</p>
+            </button>
+          </div>
+          <div class="rndm__qoute qoute">
+            <img
+              class="qoute__img"
+              id="qoute__img"
+              src="assets/images/cat_4_rndm.jpg"
+              alt="Котик"
+            />
+            <p class="qoute__p" id="qoute__p">Тут будет цитата</p>
+          </div>
+        </div>
+      </article>
+      <!-- Блок информационной страницы про кота, отвечает Катя -->
+      <article id="blockMap">
+        <h2 class="h2">Усы, лапы и хвост – вот мои документы!</h2>
+        <div class="wrapper">
+          <div class="map__body">
+            <div id="01" class="map__item">
+              <img
+                data-tooltip="Хвост диктует коту направление движения, эмоции и даже периодически подсказывает мурчащему аппарату, как наиболее выгодным образом раскрутить хозяина на еду."
+                class="map__image"
+                src="/assets/images/cat_map_1.jpg"
+                alt="часть_1"
+              />
+            </div>
+            <div id="02" class="map__item">
+              <img
+                class="map__image"
+                src="/assets/images/cat_map_2.jpg"
+                alt="часть_2"
+              />
+            </div>
+            <div id="03" class="map__item">
+              <img
+                class="map__image"
+                src="/assets/images/cat_map_3.jpg"
+                alt="часть_3"
+              />
+            </div>
+            <div id="04" class="map__item">
+              <img
+                class="map__image"
+                src="/assets/images/cat_map_4.jpg"
+                alt="часть_4"
+              />
+            </div>
+            <div id="05" class="map__item">
+              <img
+                class="map__image"
+                src="/assets/images/cat_map_5.jpg"
+                alt="часть_5"
+              />
+            </div>
+            <div id="06" class="map__item">
+              <img
+                class="map__image"
+                src="/assets/images/cat_map_6.jpg"
+                alt="часть_6"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
     </main>
     <footer></footer>
     <script src="assets/js/slider.js"></script>

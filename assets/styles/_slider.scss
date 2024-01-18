@@ -6,73 +6,67 @@
   justify-content: center;
   align-items: baseline;
   font-family: $fontmain;
-  grid-template-rows: repeat(6, 40px);
   align-items: center;
   margin-top: 151px;
 
   .slider-points {
     display: grid;
+    grid-template-rows: repeat(6, 40px);
     justify-items: center;
     margin-right: 12vw;
-
+    gap: 30px;
     .slider-points__arc {
       grid-row-start: 1;
       grid-row-end: 2;
       grid-column-start: 1;
       grid-column-end: 2;
-      margin-top: 5px;
+      margin-top: 12px;
     }
-
+    .slider-points__paragraph {
+      cursor: pointer;
+      font-size: 20px;
+    }
     .slider-points__item1 {
       grid-row-start: 1;
       grid-row-end: 2;
       grid-column-start: 1;
       grid-column-end: 2;
-      cursor: pointer;
     }
     .slider-points__item2 {
       grid-row-start: 2;
       grid-row-end: 3;
       grid-column-start: 1;
       grid-column-end: 2;
-      cursor: pointer;
     }
     .slider-points__item3 {
       grid-row-start: 3;
       grid-row-end: 4;
       grid-column-start: 1;
       grid-column-end: 2;
-      cursor: pointer;
     }
     .slider-points__item4 {
       grid-row-start: 4;
       grid-row-end: 5;
       grid-column-start: 1;
       grid-column-end: 2;
-      cursor: pointer;
     }
     .slider-points__item5 {
       grid-row-start: 5;
       grid-row-end: 6;
       grid-column-start: 1;
       grid-column-end: 2;
-      cursor: pointer;
     }
     .slider-points__item6 {
       grid-row-start: 6;
       grid-row-end: 7;
       grid-column-start: 1;
       grid-column-end: 2;
-      cursor: pointer;
     }
   }
   .slider-container {
     display: flex;
     justify-content: flex-start;
-    
-    
     width: 27%;
-
     overflow: hidden;
     flex-basis: 70%;
     .slider-line {
@@ -82,28 +76,28 @@
       .slider-card {
         display: flex;
         width: 28%;
-       
         flex-shrink: 0;
         justify-content: flex-start;
         align-items: center;
-
         border-radius: 20px;
         background: $bgcolorwhite;
-        
-        
 
-        .slider__text {
+        .slider-card__text {
           margin: 0 26px 0 26px;
           max-width: 45%;
 
-          .slider__text_header {
-            @include h2($colortextdark);
+          .slider-card__header {
+            color: $colortextdark;
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 110px;
           }
-          .slider__text_paragraph {
+          .slider-card__paragraph {
             font-size: 20px;
           }
         }
-        .slider__img {
+        .slider-card__img {
           border-radius: 20px;
           object-fit: cover;
           width: 502px;
