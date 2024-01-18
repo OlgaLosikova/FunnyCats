@@ -1,3 +1,4 @@
+
 .rndm__qoute {
     display: flex;
     flex-direction: row;
@@ -28,12 +29,12 @@
     
     }
 
-    .btntobe_img {
+    .btntobe .btntobe__img {
         width: 130px;
         height: 130px;
     }
 
-    .btntobe_img :active {
+    .btntobe :active {
         transform: scale(1.2);
         box-shadow: $bgshadow;
     }
