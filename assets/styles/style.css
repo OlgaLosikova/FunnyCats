@@ -8,29 +8,33 @@
   font-weight: 700;
   text-transform: uppercase;
 }
-.header .header__nav {
+.header .header-container {
+  display: flex;
+  justify-content: space-between;
+}
+.header .header-container .header-logo {
+  width: 100px;
+  height: 100px;
+}
+.header .header-container .header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header .header__nav .header__logo {
-  width: 100px;
-  height: 100px;
-}
-.header .header__nav .nav-list {
+.header .header-container .header-nav .nav-list {
   display: flex;
   justify-content: flex-end;
   padding-inline-start: 0;
   list-style-type: none;
   font-size: 20px;
 }
-.header .header__nav .nav-list .nav-list__item {
+.header .header-container .header-nav .nav-list .nav-list__item {
   float: left;
   margin-left: 5vw;
   color: #c3b9b5;
   text-decoration: none;
 }
-.header .header__nav .nav-list .nav-list__item:hover {
+.header .header-container .header-nav .nav-list .nav-list__item:hover {
   text-decoration: underline;
 }
 
@@ -39,14 +43,15 @@
   justify-content: center;
   align-items: baseline;
   font-family: "Futura New";
-  grid-template-rows: repeat(6, 40px);
   align-items: center;
   margin-top: 151px;
 }
 .slider .slider-points {
   display: grid;
+  grid-template-rows: repeat(6, 40px);
   justify-items: center;
   margin-right: 12vw;
+  gap: 30px;
 }
 .slider .slider-points .slider-points__arc {
   grid-row-start: 1;
@@ -118,21 +123,21 @@
   border-radius: 20px;
   background: #fff;
 }
-.slider .slider-container .slider-line .slider-card .slider__text {
+.slider .slider-container .slider-line .slider-card .slider-card__text {
   margin: 0 26px 0 26px;
   max-width: 45%;
 }
-.slider .slider-container .slider-line .slider-card .slider__text .slider__text_header {
+.slider .slider-container .slider-line .slider-card .slider-card__text .slider-card__header {
   color: #080606;
   font-size: 80px;
   font-style: normal;
   font-weight: 400;
-  line-height: 110px; /* 137.5% */
+  line-height: 110px;
 }
-.slider .slider-container .slider-line .slider-card .slider__text .slider__text_paragraph {
+.slider .slider-container .slider-line .slider-card .slider-card__text .slider-card__paragraph {
   font-size: 20px;
 }
-.slider .slider-container .slider-line .slider-card .slider__img {
+.slider .slider-container .slider-line .slider-card .slider-card__img {
   border-radius: 20px;
   object-fit: cover;
   width: 502px;
