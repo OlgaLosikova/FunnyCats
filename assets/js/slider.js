@@ -18,7 +18,7 @@ const changeSlide = () => {
   rollSlider();
 };
 const rollSlider = () => {
-  sliderLine.style.transform = `translateX(${-sliderCount * slideWidth*1.009}px)`;
+  sliderLine.style.transform = `translateX(${-sliderCount * slideWidth}px)`;
   sliderArc.style.gridRowStart=`${sliderCount+1}`;
   sliderArc.style.gridRowEnd=`${sliderCount+2}`;
 
