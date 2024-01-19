@@ -26,6 +26,15 @@
     justify-items: center;
     margin-right: 6%;
     gap: 30px;
+    @media screen and (max-width: 1690px) {
+      margin-right: 8%;
+    }
+    @media screen and (max-width: 1570px) {
+      margin-right: 2%;
+    }
+    @media screen and (max-width: 1200px) {
+      margin-right: 0;
+    }
     .slider-points__arc {
       grid-row-start: 1;
       grid-row-end: 2;
@@ -77,28 +86,54 @@
   .slider-container {
     display: flex;
     justify-content: flex-start;
-        overflow: hidden;
-    flex-basis: 71%;
+    overflow: hidden;
+    flex-basis: 74%;
+    @media screen and (max-width: 1690px) {
+      flex-basis: 83%;
+    }
+    @media screen and (max-width: 1570px) {
+      flex-basis: 90%;
+    }
+
     .slider-line {
       display: flex;
       justify-content: flex-start;
       transition: all 1s;
       .slider-card {
         display: flex;
-       flex-basis: 31%;
+        flex-basis: 31%;
         flex-shrink: 0;
         justify-content: flex-start;
         align-items: center;
         border-radius: 20px;
         background: $bgcolorwhite;
+        @media screen and (max-width: 1690px) {
+          flex-basis: 36%;
+        }
+        @media screen and (max-width: 1570px) {
+          flex-direction: column-reverse;
+          flex-basis: 45%;
+        }
+        @media screen and (max-width: 1200px) {
+          align-items: flex-start;
+          padding-left: 5%;
+          flex-basis: 41%;
+        }
 
         .slider-card__text {
           margin: 0 26px 0 26px;
           width: 45%;
 
+          @media screen and (max-width: 1570px) {
+            width: 50%;
+            margin: 0;
+          }
           .slider-card__header {
             @include h2($colortextdark, $bgcolorlight);
             text-align: start;
+            @media screen and (max-width: 1570px) {
+              line-height: 60px;
+            }
           }
           .slider-card__paragraph {
             font-size: 20px;
@@ -110,6 +145,14 @@
           width: 502px;
           height: 502px;
           box-shadow: $bgshadow;
+          @media screen and (max-width: 1690px) {
+            width: 410px;
+            height: 410px;
+          }
+          @media screen and (max-width: 1570px) {
+            width: 502px;
+            height: 502px;
+          }
         }
       }
     }
