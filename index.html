@@ -31,9 +31,36 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="main">
+      <!-- Блок приветствие, отвечает Тася -->
+      <div class="sayhello">
+        <p class="sayhello__p">
+          Привет! Интересно куда ты попал? Располагайся - сейчас расскажем!
+          <br>Наверняка ты искал интересную страницу про котиков и тут ты найдешь
+            как раз много необычного:
+         <ul class="sayhello__ul">
+            <li class='sayhello__li'>сможешь почитать информацию о самых
+              <a href="#blockSlider" class="sayhello__item"> известных котиках,</a>
+             </li>
+            <li class='sayhello__li'>поиграть в  <a class="sayhello__item" href="#blockGame">игры </a> с котиками,</li>
+            <li class='sayhello__li'>получить  <a class="sayhello__item" href="#blockRndm">ободряющую
+              фразу от котика,</a> 
+           <li class='sayhello__li'> узнаешь подробную  <a class="sayhello__item" href="#blockMap"> карту котика,</a>            
+            </li>
+              <li class='sayhello__li'>
+                а еще ты можешь помочь нам создать <a href="#blockForm" class="sayhello__item" > базу</a>  с информацией
+          о самых лучших питомцах на свете -котиках!!
+              </li>
+          </ul>
+           <br />Скорее заходи к нам
+          - узнавай, играй и просто отдыхай!
+        </p>
+      </div>
       <!-- Блок слайдер, отвечает Оля -->
       <article id="blockSlider">
+        <h1 class="slider-header">
+          Знаменитые коты
+        </h1>
         <div class="slider">
           <div class="slider-points">
             <img
@@ -52,7 +79,7 @@
             <div class="slider-line">
               <div class="slider-card">
                 <div class="slider-card__text">
-                  <h1 class="slider-card__header">Нала</h1>
+                  <h2 class="slider-card__header">Нала</h2>
 
                   <strong>Локация:</strong>
                   <p class="slider-card__paragraph" id="catLocation">
@@ -81,7 +108,7 @@
               </div>
               <div class="slider-card">
                 <div class="slider-card__text">
-                  <h1 class="slider-card__header">Полковник Мяу</h1>
+                  <h2 class="slider-card__header">Полковник Мяу</h2>
 
                   <strong>Локация:</strong>
                   <p class="slider-card__paragraph">Лос-Анжелес, США</p>
@@ -105,7 +132,7 @@
               </div>
               <div class="slider-card">
                 <div class="slider-card__text">
-                  <h1 class="slider-card__header">Гарфи</h1>
+                  <h2 class="slider-card__header">Гарфи</h2>
 
                   <strong>Локация:</strong>
                   <p class="slider-card__paragraph">Турция</p>
@@ -130,7 +157,7 @@
               </div>
               <div class="slider-card">
                 <div class="slider-card__text">
-                  <h1 class="slider-card__header">Сердитая кошка</h1>
+                  <h2 class="slider-card__header">Сердитая кошка</h2>
 
                   <strong>Локация:</strong>
                   <p class="slider-card__paragraph">Морристаун, США</p>
@@ -178,7 +205,7 @@
               </div>
               <div class="slider-card">
                 <div class="slider-card__text">
-                  <h1 class="slider-card__header">Снупи</h1>
+                  <h2 class="slider-card__header">Снупи</h2>
 
                   <strong>Локация:</strong>
                   <p class="slider-card__paragraph">Чэнду, Китай</p>
@@ -496,15 +523,12 @@
             </p>
             <div class="container__btntobe btntobe" id="btntobe">
               <img
-                class="btntobe_img"
+                class="btntobe__img"
                 src="assets/images/img_random_paw.jpg"
                 alt="лапка"
               />
             </div>
-            <!-- <button class="container__btn" id="container__btn">
-              <p class="container__p">Мяу!</p>
-            </button> -->
-          </div>
+         </div>
           <div class="rndm__qoute qoute">
             <img
               class="qoute__img"
@@ -512,7 +536,7 @@
               src="assets/images/cat_4_rndm.jpg"
               alt="Котик"
             />
-            <p class="qoute__p" id="qoute__p">Тут будет цитата</p>
+            <p class="qoute__p" id="qoute__p"> Мур-мур-мур</p>
           </div>
         </div>
       </article>
