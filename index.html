@@ -23,13 +23,39 @@
               >
             </li>
             <li><a class="nav-list__item" href="#blockGame">играть</a></li>
-            <li><a class="nav-list__item" href="#blockRndm">фото и факт</a></li>
+            <li>
+              <a class="nav-list__item" href="#blockRndm">фото и цитата</a>
+            </li>
             <li><a class="nav-list__item" href="#blockMap">карта кота</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
+    <main class="main">
+      <!-- Блок приветствие, отвечает Тася -->
+      <div class="sayhello">
+        <p class="sayhello__p">
+          Привет! Интересно куда ты попал? Располагайся - сейчас расскажем!
+          <br>Наверняка ты искал интересную страницу про котиков и тут ты найдешь
+            как раз много необычного:
+         <ul class="sayhello__ul">
+            <li class='sayhello__li'>сможешь почитать информацию о самых
+              <a href="#blockSlider" class="sayhello__item"> известных котиках,</a>
+             </li>
+            <li class='sayhello__li'>поиграть в  <a class="sayhello__item" href="#blockGame">игры </a> с котиками,</li>
+            <li class='sayhello__li'>получить  <a class="sayhello__item" href="#blockRndm">ободряющую
+              фразу от котика,</a> 
+           <li class='sayhello__li'> узнаешь подробную  <a class="sayhello__item" href="#blockMap"> карту котика,</a>            
+            </li>
+              <li class='sayhello__li'>
+                а еще ты можешь помочь нам создать <a href="#blockForm" class="sayhello__item" > базу</a>  с информацией
+          о самых лучших питомцах на свете -котиках!!
+              </li>
+          </ul>
+           <br />Скорее заходи к нам
+          - узнавай, играй и просто отдыхай!
+        </p>
+      </div>
       <!-- Блок слайдер, отвечает Оля -->
       <article id="blockSlider">
         <h1 class="slider-header">
@@ -40,8 +66,7 @@
             <img
               class="slider-points__arc"
               src="assets/svg/process.svg"
-              alt="process"
-            />
+              alt="process" />
             <p class="slider-points__paragraph slider-points__item1">1</p>
             <p class="slider-points__paragraph slider-points__item2">2</p>
             <p class="slider-points__paragraph slider-points__item3">3</p>
@@ -77,8 +102,7 @@
                 <img
                   class="slider-card__img"
                   src="assets/images/nala.jpg"
-                  alt="nala"
-                />
+                  alt="nala" />
               </div>
               <div class="slider-card">
                 <div class="slider-card__text">
@@ -101,8 +125,7 @@
                 <img
                   class="slider-card__img"
                   src="assets/images/colonelmeow.jpg"
-                  alt="colonelmeow"
-                />
+                  alt="colonelmeow" />
               </div>
               <div class="slider-card">
                 <div class="slider-card__text">
@@ -126,8 +149,7 @@
                 <img
                   class="slider-card__img"
                   src="assets/images/garfy.jpg"
-                  alt="colonelmeow"
-                />
+                  alt="colonelmeow" />
               </div>
               <div class="slider-card">
                 <div class="slider-card__text">
@@ -150,8 +172,7 @@
                 <img
                   class="slider-card__img"
                   src="assets/images/grumpycat.jpg"
-                  alt="grumpycat"
-                />
+                  alt="grumpycat" />
               </div>
               <div class="slider-card">
                 <div class="slider-card__text">
@@ -174,8 +195,7 @@
                 <img
                   class="slider-card__img"
                   src="assets/images/shironeko.jpg"
-                  alt="shironeko"
-                />
+                  alt="shironeko" />
               </div>
               <div class="slider-card">
                 <div class="slider-card__text">
@@ -201,8 +221,7 @@
                 <img
                   class="slider-card__img"
                   src="assets/images/snoopy.jpg"
-                  alt="snoopy"
-                />
+                  alt="snoopy" />
               </div>
             </div>
           </div>
@@ -217,8 +236,7 @@
           class="form"
           name="catForm"
           novalidate
-          onsubmit="return validateForm()"
-        >
+          onsubmit="return validateForm()">
           <div class="form__field">
             <label class="form__label" for="login">Логин:</label>
             <input
@@ -230,8 +248,7 @@
               required
               minlength="2"
               maxlength="20"
-              pattern="[A-Za-z\s]+"
-            />
+              pattern="[A-Za-z\s]+" />
           </div>
 
           <div class="form__field">
@@ -245,8 +262,7 @@
               required
               minlength="2"
               maxlength="20"
-              pattern="[A-Za-z\s]+"
-            />
+              pattern="[A-Za-z\s]+" />
           </div>
 
           <div class="form__field">
@@ -257,8 +273,7 @@
               id="email"
               name="email"
               placeholder="Введите свой email"
-              required
-            />
+              required />
           </div>
 
           <div class="form__field">
@@ -269,8 +284,7 @@
               id="nickname"
               name="nickname"
               placeholder="Введите кличку кошки"
-              required
-            />
+              required />
           </div>
 
           <div class="form__field">
@@ -308,8 +322,7 @@
               type="text"
               id="color"
               name="color"
-              required
-            />
+              required />
           </div>
 
           <div class="form__field">
@@ -319,8 +332,7 @@
               type="text"
               id="age"
               name="age"
-              required
-            />
+              required />
           </div>
 
           <div class="form__field">
@@ -331,8 +343,7 @@
               id="male"
               name="gender"
               value="male"
-              required
-            />
+              required />
             <label class="form__label" for="male">Мужской</label>
             <input
               class="form__input"
@@ -340,8 +351,7 @@
               id="female"
               name="gender"
               value="female"
-              required
-            />
+              required />
             <label class="form__label" for="female">Женский</label>
           </div>
 
@@ -354,8 +364,7 @@
               type="text"
               placeholder="Что умеет делать питомец"
               id="skill"
-              name="skill"
-            />
+              name="skill" />
           </div>
 
           <div class="form__field">
@@ -368,8 +377,7 @@
               placeholder="Введите пароль"
               required
               minlength="8"
-              pattern="^(?=.*[a-z])(?=.*[A-Z] ])(?=.*\d).+$"
-            />
+              pattern="^(?=.*[a-z])(?=.*[A-Z] ])(?=.*\d).+$" />
           </div>
 
           <div class="form__field">
@@ -384,8 +392,7 @@
               placeholder="Повторите свой пароль"
               required
               minlength="8"
-              pattern="^(?=.*[a-z])(?=.*[A-Z] ])(?=.*\d).+$"
-            />
+              pattern="^(?=.*[a-z])(?=.*[A-Z] ])(?=.*\d).+$" />
           </div>
 
           <div class="form__field form__field--checkbox">
@@ -394,8 +401,7 @@
               type="checkbox"
               id="approval"
               name="approval"
-              required
-            />
+              required />
             <label class="form__label form__label--checkbox" for="consent"
               >Я даю согласие на обработку данных</label
             >
@@ -422,68 +428,52 @@
         <div class="gamecontainer">
           <div
             class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1"
-            alt="Белый кот"
-          ></div>
+            alt="Белый кот"></div>
           <div
             class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2"
-            alt="Полосатый кот"
-          ></div>
+            alt="Полосатый кот"></div>
           <div
             class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1"
-            alt="Белый кот"
-          ></div>
+            alt="Белый кот"></div>
           <div
             class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2"
-            alt="Полосатый кот"
-          ></div>
+            alt="Полосатый кот"></div>
           <div
             class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1"
-            alt="Белый кот"
-          ></div>
+            alt="Белый кот"></div>
           <div
             class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2"
-            alt="Полосатый кот"
-          ></div>
+            alt="Полосатый кот"></div>
           <div
             class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1"
-            alt="Белый кот"
-          ></div>
+            alt="Белый кот"></div>
           <div
             class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2"
-            alt="Полосатый кот"
-          ></div>
+            alt="Полосатый кот"></div>
           <div
             class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1"
-            alt="Белый кот"
-          ></div>
+            alt="Белый кот"></div>
           <div
             class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2"
-            alt="Полосатый кот"
-          ></div>
+            alt="Полосатый кот"></div>
           <div
             class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1"
-            alt="Белый кот"
-          ></div>
+            alt="Белый кот"></div>
           <div
             class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2"
-            alt="Полосатый кот"
-          ></div>
+            alt="Полосатый кот"></div>
           <div
             class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1"
-            alt="Белый кот"
-          ></div>
+            alt="Белый кот"></div>
           <div
             class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2"
-            alt="Полосатый кот"
-          ></div>
+            alt="Полосатый кот"></div>
           <div
             class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat1"
-            alt="Белый кот"
-          ></div>
+            alt="Белый кот"></div>
           <div
             class="gamecontainer__square gamecontainer__square-closed gamecontainer__square-cat2"
-            alt="Полосатый кот"
-          ></div>
+            alt="Полосатый кот"></div>
         </div>
       </article>
       <!-- Блок рандомайзер, отвечает Тася -->
@@ -492,21 +482,23 @@
           <h2 class="rndm__header h2">Не грусти!</h2>
           <div class="rndm__container container">
             <p class="container__p">
-              Если тебе грустно! нажимай скорее на кнопку и веселый котик
+              Если тебе грустно! нажимай скорее на лапку и веселый котик
               поднимет тебе настроение! Мяу
             </p>
-            <button class="container__btn" id="container__btn">
-              <p class="container__p">Мяу!</p>
-            </button>
-          </div>
+            <div class="container__btntobe btntobe" id="btntobe">
+              <img
+                class="btntobe__img"
+                src="assets/images/img_random_paw.jpg"
+                alt="лапка" />
+            </div>
+         </div>
           <div class="rndm__qoute qoute">
             <img
               class="qoute__img"
               id="qoute__img"
               src="assets/images/cat_4_rndm.jpg"
-              alt="Котик"
-            />
-            <p class="qoute__p" id="qoute__p">Тут будет цитата</p>
+              alt="Котик" />
+            <p class="qoute__p" id="qoute__p"> Мур-мур-мур</p>
           </div>
         </div>
       </article>
@@ -520,49 +512,75 @@
                 data-tooltip="Хвост диктует коту направление движения, эмоции и даже периодически подсказывает мурчащему аппарату, как наиболее выгодным образом раскрутить хозяина на еду."
                 class="map__image"
                 src="/assets/images/cat_map_1.jpg"
-                alt="часть_1"
-              />
+                alt="часть_1" />
             </div>
             <div id="02" class="map__item">
               <img
                 class="map__image"
                 src="/assets/images/cat_map_2.jpg"
-                alt="часть_2"
-              />
+                alt="часть_2" />
             </div>
             <div id="03" class="map__item">
               <img
                 class="map__image"
                 src="/assets/images/cat_map_3.jpg"
-                alt="часть_3"
-              />
+                alt="часть_3" />
             </div>
             <div id="04" class="map__item">
               <img
                 class="map__image"
                 src="/assets/images/cat_map_4.jpg"
-                alt="часть_4"
-              />
+                alt="часть_4" />
             </div>
             <div id="05" class="map__item">
               <img
                 class="map__image"
                 src="/assets/images/cat_map_5.jpg"
-                alt="часть_5"
-              />
+                alt="часть_5" />
             </div>
             <div id="06" class="map__item">
               <img
                 class="map__image"
                 src="/assets/images/cat_map_6.jpg"
-                alt="часть_6"
-              />
+                alt="часть_6" />
             </div>
+          </div>
+        </div>
+        <div class="modal">
+          <div class="modal__main">
+            <!-- <h2 class="modal__title">Модальное окно</h2> -->
+
+            <div class="modal__container">
+              <p>Какой-то текст</p>
+            </div>
+
+            <button class="modal__close">&#10006;</button>
           </div>
         </div>
       </article>
     </main>
-    <footer></footer>
+    <footer class="header">
+      <div class="header-container">
+        <img class="header-logo" src="assets/svg/logo.svg" alt="logo" />
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li>
+              <a href="#blockSlider" class="nav-list__item">знаменитые коты</a>
+            </li>
+            <li>
+              <a class="nav-list__item" href="#blockForm"
+                >вступить в сообщество</a
+              >
+            </li>
+            <li><a class="nav-list__item" href="#blockGame">играть</a></li>
+            <li>
+              <a class="nav-list__item" href="#blockRndm">фото и цитата</a>
+            </li>
+            <li><a class="nav-list__item" href="#blockMap">карта кота</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/game.js"></script>
     <script src="assets/js/form.js"></script>

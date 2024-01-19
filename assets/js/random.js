@@ -1,6 +1,6 @@
 const qoute = document.getElementById('qoute__p' );
 const qouteImg = document.getElementById('qoute__img');
-const btn = document.getElementById('container__btn');
+const btn = document.getElementById('btntobe');
 
 const randomImg = ()=> {
   fetch ('https://api.thecatapi.com/v1/images/search')
