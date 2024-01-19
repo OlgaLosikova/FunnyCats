@@ -1,0 +1,24 @@
+.main {
+    margin-top: 130px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.sayhello {
+    font-family: $fontmain;
+    font-size: 30px;
+}
+.sayhello__li {
+         list-style-image: url('/assets/images/cat_marker_li.jpg'); 
+       }
+.sayhello__item {
+    text-decoration: none;
+    color:  $bgcolororange;
+}
+
+.sayhello__item :visited {
+    color:  $colortextgray; 
+}
+.sayhello__item :hover {
+    text-decoration: underline;
+}
