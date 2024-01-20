@@ -7,6 +7,11 @@
  .map {
     position: relative;
  }  
+
+ .map__item:hover {
+    transform: scale(1.2);
+    box-shadow: $bgshadow;
+ }
 .modal {
     display: none;
     position: absolute;
