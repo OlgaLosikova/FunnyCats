@@ -2,15 +2,7 @@
 //   border: 1px solid red;
 // }
 .slider-header {
-  color: $colortextdark;
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110px;
-  background-color: $bgcolororange;
-  font-family: $fontmain;
-  margin-top: 151px;
-  text-align: center;
+  @include h2($colortextdark, $bgcolororange);
 }
 .slider {
   display: flex;
@@ -34,6 +26,12 @@
     }
     @media screen and (max-width: 1200px) {
       margin-right: 0;
+    }
+    @media screen and (max-width: 1020px) {
+      margin-right: 22%;
+    }
+    @media screen and (max-width: 740px) {
+      margin-right: 7%;
     }
     .slider-points__arc {
       grid-row-start: 1;
@@ -119,14 +117,24 @@
           padding-left: 5%;
           flex-basis: 41%;
         }
+        @media screen and (max-width: 1020px) {
+          flex-basis: 73%;
+          padding-left: 3%;
+        }
 
         .slider-card__text {
           margin: 0 26px 0 26px;
           width: 45%;
 
           @media screen and (max-width: 1570px) {
-            width: 50%;
+            width: 46%;
             margin: 0;
+          }
+          @media screen and (max-width: 1020px) {
+            width: 40%;
+          }
+          @media screen and (max-width: 1020px) {
+            width: 30%;
           }
           .slider-card__header {
             @include h2($colortextdark, $bgcolorlight);
@@ -152,6 +160,10 @@
           @media screen and (max-width: 1570px) {
             width: 502px;
             height: 502px;
+          }
+          @media screen and (max-width: 1020px) {
+            width: 300px;
+            height: 300px;
           }
         }
       }
