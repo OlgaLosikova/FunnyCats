@@ -231,7 +231,8 @@
 }
 .slider .slider-container .slider-line .slider-card .slider-card__img {
   border-radius: 20px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 502px;
   height: 502px;
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.1);
@@ -346,6 +347,7 @@
 .container .container__p {
   font-family: "Futura New";
   font-size: 30px;
+  text-align: center;
 }
 
 .btntobe .btntobe__img {
@@ -365,21 +367,45 @@
   font-family: "Futura New";
 }
 
+@media screen and (max-width: 1690px) {
+  .rndm {
+    margin-right: 8%;
+  }
+}
+@media screen and (max-width: 1570px) {
+  .rndm {
+    margin-right: 2%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rndm__qoute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .form {
   font-family: "Futura New";
-  background-color: #ffc59e;
   text-align: center;
   font-size: 25px;
   padding: 20px;
   box-sizing: border-box;
 }
 
-h1 {
-  text-align: center;
-}
-
 .form__field {
   padding: 5px;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Futura New";
+  font-size: 40px;
+  background-color: #ffc59e;
 }
 
 .main {
@@ -410,6 +436,55 @@ h1 {
   text-decoration: underline;
 }
 
+.map {
+  position: relative;
+  display: grid;
+  justify-content: center;
+}
+
+.map__body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin-left: 2%;
+  width: 80%;
+}
+
+.map__item:hover {
+  transform: scale(1.2);
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.modal {
+  transform: scale(0);
+  position: absolute;
+  width: 40vw;
+  text-align: center;
+  border-radius: 10px;
+  top: 30vh;
+  background-color: #ffc59e;
+  z-index: 2;
+}
+
+.modal__p {
+  margin-top: 20px;
+  font-family: "Futura New";
+  color: #080606;
+}
+
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.active {
+  transform: scale(1);
+  transition: 0.4s, ease-in-out;
+}
+
 @font-face {
   src: url(../fonts/FuturaNewBold-Reg.woff);
   font-family: "Futura New";
@@ -421,6 +496,4 @@ h1 {
   font-family: "Futura New";
   font-style: normal;
   font-weight: 400;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

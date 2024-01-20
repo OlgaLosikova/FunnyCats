@@ -1,0 +1,46 @@
+.map {
+    position: relative;
+    display: grid;
+    justify-content: center;
+ }  
+
+ .map__body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(3, 1fr);
+    margin-left: 2%;
+    width: 80%;
+     }
+
+.map__item:hover {
+    transform: scale(1.2);
+    box-shadow: $bgshadow;
+ }
+.modal {
+    transform: scale(0) ;
+    position: absolute;
+    width: 40vw;
+    text-align: center;
+    border-radius: 10px;
+    top: 30vh;
+    background-color: $bgcolororange;
+    z-index: 2;
+}
+.modal__p {
+    margin-top: 20px;
+    font-family: $fontmain;
+    color: $colortextdark;
+}
+
+.modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.active {
+    transform: scale(1);
+    transition: 0.4s, ease-in-out;
+}

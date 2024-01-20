@@ -25,6 +25,7 @@
     .container__p {
         font-family: $fontmain;
         font-size: 30px; 
+        text-align: center;
     }
     
     }
@@ -44,4 +45,28 @@
    font-size: 60px;
     background-color: $bgcolororange;
     font-family: $fontmain;
+}
+
+@media screen and (max-width: 1690px) {
+   .rndm{
+    margin-right: 8%;
+   } 
+  }
+  @media screen and (max-width: 1570px) {
+    .rndm{
+        margin-right: 2%;
+       } 
+     }
+  
+  @media screen and (max-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  } 
+  .rndm__qoute {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 }
