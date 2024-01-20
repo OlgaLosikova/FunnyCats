@@ -40,13 +40,13 @@
 
 .slider-header {
   color: #080606;
-  background-color: #ffc59e;
-  font-size: 60px;
+  font-family: "Futura New";
+  font-size: 80px;
   font-style: normal;
   font-weight: 400;
-  line-height: 110px;
+  line-height: 110px; /* 137.5% */
+  background-color: #ffc59e;
   text-align: center;
-  font-family: "Futura New";
 }
 
 .slider {
@@ -231,8 +231,7 @@
 }
 .slider .slider-container .slider-line .slider-card .slider-card__img {
   border-radius: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 502px;
   height: 502px;
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.1);
@@ -361,9 +360,13 @@
 }
 
 .h2 {
-  text-align: center;
-  font-size: 60px;
+  color: #080606;
   background-color: #ffc59e;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110px;
+  text-align: center;
   font-family: "Futura New";
 }
 
@@ -496,4 +499,6 @@ h3 {
   font-family: "Futura New";
   font-style: normal;
   font-weight: 400;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
