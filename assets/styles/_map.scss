@@ -1,0 +1,22 @@
+.map__body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+ .map {
+    position: relative;
+ }  
+.modal {
+    display: none;
+    position: absolute;
+    top: 30vh;
+    background-color: $bgcolorlight;
+    z-index: 2;
+}
+
+.modal__p {
+    font-family: $fontmain;
+}
+.active {
+    display: block;
+}
