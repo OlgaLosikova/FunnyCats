@@ -336,19 +336,21 @@
 
 .form {
   font-family: "Futura New";
-  background-color: #ffc59e;
   text-align: center;
   font-size: 25px;
   padding: 20px;
   box-sizing: border-box;
 }
 
-h1 {
-  text-align: center;
-}
-
 .form__field {
   padding: 5px;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Futura New";
+  font-size: 40px;
+  background-color: #ffc59e;
 }
 
 .main {
