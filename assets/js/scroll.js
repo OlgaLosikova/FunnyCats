@@ -1,4 +1,4 @@
-document.querySelectorAll('a[href^="#"').forEach((link) => {
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
     let href = link.getAttribute("href").substring(1);
