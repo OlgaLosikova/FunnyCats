@@ -17,11 +17,13 @@ const changeSlide = () => {
   }
   rollSlider();
 };
+sliderCards.forEach((card) => {
+  card.style = `width:${slideWidth}px;`;
+});
 const rollSlider = () => {
   sliderLine.style.transform = `translateX(${-sliderCount * slideWidth}px)`;
-  sliderArc.style.gridRowStart=`${sliderCount+1}`;
-  sliderArc.style.gridRowEnd=`${sliderCount+2}`;
-
+  sliderArc.style.gridRowStart = `${sliderCount + 1}`;
+  sliderArc.style.gridRowEnd = `${sliderCount + 2}`;
 };
 
 const sllderInterval = setInterval(function () {
