@@ -49,4 +49,4 @@ Use top menu for navigation to blocks.
 ---
 
 🔗 Find this website on GitHub Pages:
-https://olgalosikova.github.io/js-team-project/
+https://olgalosikova.github.io/FunnyCats/
